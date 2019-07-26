@@ -1,4 +1,4 @@
 # Summary
 
-* [About](00-ABOUT.md)
-* [Book Development](DEV.md)
+* [Introduction](README.md)
+* [Book Development](misc/DEV.md)
