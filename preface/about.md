@@ -16,7 +16,7 @@ Additionally, learning how to program in completely foreign territory will make 
 
 ## Requirements
 * Ability to program in multiple languages and learn from example.
-* Access to an IBMi system with OS V7R3+
+* Access to an IBMi system with OS **V7R3+**
 
 
 ## The Most Valuable Advice
@@ -27,9 +27,19 @@ A lot of the terminology and concepts didn't sink in immediately.
 Its important to stumble around and fall a bunch, its part of the learning process.
 
 
-## Author
+## Who Are You?
 I'm a software developer who wants to learn everything related to programming.
 **I am by no means an IBMi expert, I'm barely a novice.**
 I was lucky enough to score my first job writing Java/ColdFusion that interfaces with the IBMi.
 After awhile, I got tired of the IBMi being a "black box". So, I decided to build some windows and lights.
+With the help of my coworkers, I was given the opportunity and support to learn the basics of the IBMi.
+
+
+## Source Code
+I just have a huge dump of source code in an IBMi-like folder structure here https://github.com/barrettotte/IBM-RPG .
+If for some reason you wanted to see it as a file instead of code embedded on a page.
+
+
+## Special Thanks
+Without the support and encouragement of my coworkers, I don't think I would have continued learning or written this book. Thank you.
 
