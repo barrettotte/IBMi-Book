@@ -4,6 +4,7 @@
 ## What is this?
 This "book" is an attempt to coherently organize the various notes I've taken while learning the IBMi. The hardest part about trying to learn the IBMi is
 figuring out where to start. I'm not a very smart person, so I had a lot of trouble trying to find a good beginner friendly guide to anything.
+**This is by no means a complete A-Z guide to the IBMi**.
 
 
 ## Why?
@@ -28,5 +29,3 @@ Its important to stumble around and fall a bunch, its part of the learning proce
 
 ## Who are you?
 I'm just a curious software developer. I am by no means an IBMi expert; there is still a lot I do not know.
-
-

@@ -5,7 +5,7 @@
 * [About This Book](preface/about.md)
 * [IBMi Access and Software](preface/access.md)
 
-## Content
+## Core Content
 * [The IBMi](ibmi/index.md)
   * [Introduction to the IBMi](ibmi/intro.md)
 * [DDS and DSPF Programming](dds/index.md)
@@ -19,9 +19,19 @@
   * [Introduction to RPG Free](rpg-free/intro.md)
 * [DB2 SQL](db2/index.md)
   * [Introduction to DB2](db2/intro.md)
-* [Other Languages](other/index.md)
+
+## Extra Content
 * [Course](course/index.md)
 * [Example Programs](programs/index.md)
+* [Other Languages](other/index.md)
+  * [C/C++](other/cpp.md)
+  * [COBOL](other/cobol.md)
+  * [Java](other/java.md)
+  * [MI](other/mi.md)
+  * [PHP](other/php.md)
+  * [Python](other/python.md)
+  * [REXX](other/rexx.md)
+* [Miscellaneous](misc/index.md)
 
 ## Appendix
 * [Book Development](appendix/dev.md)
