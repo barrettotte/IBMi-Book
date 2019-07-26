@@ -1,4 +1,9 @@
 # Summary
 
-* [Introduction](README.md)
-* [Book Development](misc/DEV.md)
+
+* [Table of Contents](README.md)
+* []()
+
+## Appendix
+* [Book Development](appendix/dev.md)
+* [References](appendix/references.md)
