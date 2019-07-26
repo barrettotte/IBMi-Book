@@ -27,5 +27,9 @@ A lot of the terminology and concepts didn't sink in immediately.
 Its important to stumble around and fall a bunch, its part of the learning process.
 
 
-## Who are you?
-I'm just a curious software developer. I am by no means an IBMi expert; there is still a lot I do not know.
+## Author
+I'm a software developer who wants to learn everything related to programming.
+**I am by no means an IBMi expert, I'm barely a novice.**
+I was lucky enough to score my first job writing Java/ColdFusion that interfaces with the IBMi.
+After awhile, I got tired of the IBMi being a "black box". So, I decided to build some windows and lights.
+

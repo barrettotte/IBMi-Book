@@ -32,6 +32,13 @@
   * [Python](other/python.md)
   * [REXX](other/rexx.md)
 * [Miscellaneous](misc/index.md)
+* [Calling the IBMi](call/index.md)
+  * [With C#](call/csharp.md)
+  * [With ColdFusion](call/coldfusion.md)
+  * [With Java](call/java.md)
+  * [With NodeJS](call/node.md)
+  * [With Python](call/python.md)
+  * [With Ruby](call/ruby.md)
 
 ## Appendix
 * [Book Development](appendix/dev.md)
