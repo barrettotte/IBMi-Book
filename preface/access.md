@@ -17,4 +17,4 @@ Unfortunately, timeshare sites tend to be full and the system you use will not b
 * ILE Editor - https://github.com/worksofbarry/ILEditor
 
 
-I am casually working on an IBMi Visual Studio Code extension, so maybe that will be an option sometime.
+I am casually working on an IBMi Visual Studio Code extension, so maybe that will be an option some time as well.

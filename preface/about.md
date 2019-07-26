@@ -17,6 +17,7 @@ Additionally, learning how to program in completely foreign territory will make 
 ## Requirements
 * Ability to program in multiple languages and learn from example.
 * Access to an IBMi system with OS **V7R3+**
+* The hunger to learn
 
 
 ## The Most Valuable Advice
@@ -36,8 +37,8 @@ With the help of my coworkers, I was given the opportunity and support to learn 
 
 
 ## Source Code
+All of the code will be embedded on the pages of this book in a readable format. As far as source goes, 
 I just have a huge dump of source code in an IBMi-like folder structure here https://github.com/barrettotte/IBM-RPG .
-If for some reason you wanted to see it as a file instead of code embedded on a page.
 
 
 ## Special Thanks
