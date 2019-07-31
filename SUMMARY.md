@@ -3,6 +3,7 @@
 ## Preface
 * [Table of Contents](README.md)
 * [About This Book](preface/about.md)
+* [Before You Read](preface/before.md)
 * [IBMi Access and Software](preface/access.md)
 
 ## Core Content

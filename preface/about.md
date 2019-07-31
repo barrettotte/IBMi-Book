@@ -14,16 +14,6 @@ and immediately write it off. I think more people would enjoy learning it if the
 Additionally, learning how to program in completely foreign territory will make learning other programming languages/systems much easier.
 
 
-## Expectations
-As stated above, I am not an encyclopedia of IBMi knowledge. The more I learn about the IBMi, the less I feel like I know; **This could very well be the blind leading the blind**. 
-
-
-## Requirements
-* Ability to program in multiple languages and learn from example.
-* Access to an IBMi system with OS **V7R3+** (sorry I don't have experience in previous OS versions)
-* The hunger to learn
-
-
 ## The Most Valuable Advice
 **"Just keep drinking the IBMi Kool-Aid." - [Ryan Eberly](https://github.com/ryaneberly)**
 
@@ -38,11 +28,6 @@ I'm a software developer who wants to learn everything related to programming.
 I was lucky enough to score my first job writing Java/ColdFusion that interfaces with the IBMi.
 After awhile, I got tired of the IBMi being a "black box". So, I decided to build some windows and lights.
 With the help of my coworkers, I was given the opportunity and support to learn the basics of the IBMi.
-
-
-## Source Code
-All of the code will be embedded on the pages of this book in a readable format. As far as source goes, 
-I just have a huge dump of source code in an IBMi-like folder structure here https://github.com/barrettotte/IBM-RPG .
 
 
 ## Special Thanks
