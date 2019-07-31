@@ -1,5 +1,6 @@
 # IBMi Access and Software
 
+This book relies on having access to an IBMi running V7R3+. 
 At my current workplace I was lucky enough to be given access to the IBMi. Otherwise, this book would have never been made.
 Unfortunately, I believe it is getting harder to find sites to get IBMi access.
 
