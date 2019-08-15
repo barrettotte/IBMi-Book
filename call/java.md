@@ -1,3 +1,3 @@
-# Calling the IBMi with Java
+# Calling the IBMi with Java and Groovy
 
 xxx

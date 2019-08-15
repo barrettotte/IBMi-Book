@@ -39,3 +39,8 @@ Big list of references that I've used. I tried my hardest not to forget any.
 * [IBMi Competence Training](http://ibmicompetence.com/)
 * [Midrange](http://www.midrange.com/#home)
 
+
+## History
+* IBM Accounting Machine Manual http://www.bitsavers.org/pdf/ibm/punchedCard/AccountingMachine/224-1614-13_402-403-419.pdf
+* https://www.ibm.com/ibm/history/interactive/ibm_history.pdf
+* https://en.wikipedia.org/wiki/Tabulating_machine

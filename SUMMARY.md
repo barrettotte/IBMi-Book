@@ -8,8 +8,8 @@
 
 ## Core Content
 * [The IBMi](ibmi/index.md)
-  * [History](ibmi/history.md)
   * [Introduction](ibmi/intro.md)
+  * [History](ibmi/history.md)
 * [CL Programming](cl/index.md)
   * [Introduction](cl/intro.md)
 * [RPG Programming](rpg/index.md)
@@ -25,6 +25,7 @@
 
 ## Extra Content
 * [Example Programs](programs/index.md)
+* [Miscellaneous](misc/index.md)
 * [Other Languages](other/index.md)
   * [C/C++](other/cpp.md)
   * [COBOL](other/cobol.md)
@@ -33,11 +34,10 @@
   * [PHP](other/php.md)
   * [Python](other/python.md)
   * [REXX](other/rexx.md)
-* [Miscellaneous](misc/index.md)
 * [Calling the IBMi](call/index.md)
   * [With C#](call/csharp.md)
   * [With ColdFusion](call/coldfusion.md)
-  * [With Java](call/java.md)
+  * [With Java + Groovy](call/java.md)
   * [With NodeJS](call/node.md)
   * [With Python](call/python.md)
   * [With Ruby](call/ruby.md)
