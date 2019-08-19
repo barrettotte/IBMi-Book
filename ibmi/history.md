@@ -57,19 +57,19 @@ In this book, I will briefly go over fixed-format RPG. But, the main focus will 
 or mixed format.
 
 
-#### Hello World in fixed-format RPG III
+<h4> Hello World in fixed-format RPG III</h4>
 
-<script src="https://embed.cacher.io/d8513cd10a31f941a1a245c10d7f1bf5235afb10.js?a=d6ff662387b87f72743a3071772e16d8&t=github_gist"></script>
-
-
-#### Hello world in fixed-format RPG IV
-
-<script src="https://embed.cacher.io/d25169d60e67f843aca941920b2c19f47f5dfd12.js?a=3f1696dc0713ee878e17fbbb600d9cf1&t=github_gist"></script>
+<script type="text/javascript" src="https://embed.cacher.io/d8513cd10a31f941a1a245c10d7f1bf5235afb10.js?a=d6ff662387b87f72743a3071772e16d8&t=github_gist"></script>
 
 
-#### Hello world in free-format RPG IV
+<h4> Hello world in fixed-format RPG IV</h4>
 
-<script src="https://embed.cacher.io/d80569830c30fc43aaf840c55f7b12af2b0ea943.js?a=7a41de3f55d2c3783ffe602ba90d7133&t=github_gist"></script>
+<script type="text/javascript" src="https://embed.cacher.io/d25169d60e67f843aca941920b2c19f47f5dfd12.js?a=3f1696dc0713ee878e17fbbb600d9cf1&t=github_gist"></script>
+
+
+<h4>Hello world in free-format RPG IV</h4>
+
+<script type="text/javascript" src="https://embed.cacher.io/d80569830c30fc43aaf840c55f7b12af2b0ea943.js?a=7a41de3f55d2c3783ffe602ba90d7133&t=github_gist"></script>
 
 
 
