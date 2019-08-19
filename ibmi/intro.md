@@ -6,7 +6,12 @@ on the IBMi, I think its important to have a basic understanding of what it is.
 
 
 <br>
-![_assets/ibmi-02.PNG](_assets/ibmi-02.PNG)
+<figure align="center">
+	<img src="_assets/ibmi-02.PNG" alt="Main Menu" />
+	<figcaption align="center">
+		IBMi Main Menu
+	</figcaption>
+</figure>
 <br>
 
 

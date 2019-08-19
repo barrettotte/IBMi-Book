@@ -16,9 +16,7 @@ Unfortunately, timeshare sites tend to be full and the system you use will not b
 ## Software
 * IBM Access Client Solutions - http://www-01.ibm.com/support/docview.wss?uid=nas8N1010355
 * ILE Editor - https://github.com/worksofbarry/ILEditor
-
-
-I am casually working on an IBMi Visual Studio Code extension, so maybe that will be an option some time as well.
+* I am casually working on an IBMi Visual Studio Code extension, but no estimation on when that will be finished.
 
 
 <br>

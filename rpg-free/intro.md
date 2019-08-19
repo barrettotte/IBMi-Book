@@ -1,3 +1,3 @@
 # Introduction To RPG Free Programming
 
-xxx
+**Coming soon...**

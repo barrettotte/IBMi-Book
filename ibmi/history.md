@@ -3,11 +3,15 @@
 
 This section will be an attempt to lightly describe the history of this machine without boring the reader too much.
 
-<br>
-![_assets/ibmi-03.PNG](_assets/ibmi-03.PNG)
-<p align="center">
-(From <a href= "http://www.bitsavers.org/pdf/ibm/punchedCard/AccountingMachine/224-1614-13_402-403-419.pdf">IBM 402, 403, and 419 Account Machines Manual</a>)
-</p>
+
+<figure align="center">
+	<img src="_assets/ibmi-03.PNG" alt="IBM 400 series Accounting machine" />
+	<figcaption align="center">
+		<a href="http://www.bitsavers.org/pdf/ibm/punchedCard/AccountingMachine/224-1614-13_402-403-419.pdf">
+			[ Image Source ]
+		</a>
+	</figcaption>
+</figure>
 
 
 ## IBMi Ancestry
@@ -29,10 +33,17 @@ The naming of the IBMi gets a little confusing when you google things. You'll se
 
 
 ## RPG's Evolution
-![_assets/ibmi-04.jpg](_assets/ibmi-04.jpg)
 
+<figure align="center">
+	<img src="_assets/ibmi-04.jpg" alt="96 Column Card" />
+	<figcaption align="center">
+		96 Column Card
+		<a href="https://www.flickr.com/photos/tubetime/3492103709/in/photostream/">
+			[ Image Source ]
+		</a>
+	</figcaption>
+</figure>
 
-96-column card (From eschlaep on [flickr](https://www.flickr.com/photos/tubetime/3492103709/in/photostream/))
 <br><br>
 
 **Report Program Generator** (RPG) was developed to replicate punching 80-column cards on the IBM 1400 series as 
@@ -47,31 +58,24 @@ or mixed format.
 
 
 #### Hello World in fixed-format RPG III
-```
-      C                     MOVEL'HELLO'   HELLO  11
-      C                     MOVE 'WORLD'   HELLO
-      C           HELLO     DSPLY          WAIT    1
-      C                     SETON                     LR
-```
+<script src="https://embed.cacher.io/d8513cd10a31f941a1a245c10d7f1bf5235afb10.js?a=d6ff662387b87f72743a3071772e16d8&t=github_gist"></script>
 
 #### Hello world in fixed-format RPG IV
-```
-      C     'Hello World' DSPLY
-      C                   SETON                                        LR
-```
+<script src="https://embed.cacher.io/d25169d60e67f843aca941920b2c19f47f5dfd12.js?a=3f1696dc0713ee878e17fbbb600d9cf1&t=github_gist"></script>
 
 #### Hello world in free-format RPG IV
-```
-       /free
-        dsply ('Hello World');
-        *inlr = *on
-```
+<script src="https://embed.cacher.io/d80569830c30fc43aaf840c55f7b12af2b0ea943.js?a=7a41de3f55d2c3783ffe602ba90d7133&t=github_gist"></script>
+
+
 
 <br>
 As you can see, free-format RPG IV looks pretty readable. I think its worthwhile to be able to read fixed-format RPG III. But,
 a majority of effort should be put on RPG IV free and mixed-format.
 
-<br>
+
+By no means is this a complete history. There's much more about the IBMi that I skipped over. 
+I think that this level of knowledge is sufficient to start learning this machine.
+
 
 ## References / Additional Reading
 * Columbia University Computing History - http://www.columbia.edu/cu/computinghistory/

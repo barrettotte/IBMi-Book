@@ -1,3 +1,3 @@
 # Introduction to MI Programming
 
-xxx
+**Coming soon...**

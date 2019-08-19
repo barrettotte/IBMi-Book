@@ -1,3 +1,3 @@
 # Introduction to RPG
 
-xxx
+**Coming soon...**

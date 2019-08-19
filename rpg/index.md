@@ -1,3 +1,3 @@
 # RPG Programming
 
-xxx
+**Coming soon...**

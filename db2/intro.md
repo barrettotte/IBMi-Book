@@ -1,3 +1,3 @@
 # Introduction to DB2
 
-xxx
+**Coming soon...**
