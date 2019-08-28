@@ -1,0 +1,17 @@
+
+/* Hide php tag in code block */
+#main > pre::after {
+  display: none;
+} 
+
+#main > pre, #main > pre > code {
+  background-color: #2e2e2e; 
+}
+
+#main > pre > code {
+  color: white;
+}
+
+.sidebar, .sidebar-toggle {
+  background-color: rgb(228, 228, 228);
+}

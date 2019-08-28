@@ -1,3 +1,0 @@
-# RPG Programming
-
-**Coming soon...**
