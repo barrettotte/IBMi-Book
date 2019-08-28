@@ -7,6 +7,7 @@
   - [The IBMi](core/ibmi/index.md)
     - [Introduction](core/ibmi/intro.md)
     - [History](core/ibmi/history.md)
+    - [Access Client Solutions](core/ibmi/acs.md)
     - [OS and Navigation](core/ibmi/os.md)
     - [Your First Program](core/ibmi/first.md)
   - [CL Programming](core/cl/index.md)
