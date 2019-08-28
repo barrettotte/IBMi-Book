@@ -1,4 +1,4 @@
-<h1 align="center">Learning the IBMi as a Lowly Web Dev</h1>
+# Learning the IBMi as a Lowly Web Dev
 
 
 https://barrettotte.github.io/IBMi-Book/
@@ -6,7 +6,7 @@ https://barrettotte.github.io/IBMi-Book/
 
 <p>This is a "book" for curious developers to start learning how to program on the IBMi.</p>
 
-<br><br>
+<br>
 
 <figure align="center">
 	<img src="./docs/core/ibmi/_assets/ibmi-02.PNG" alt="My AS/400" />
