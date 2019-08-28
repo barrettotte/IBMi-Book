@@ -1,4 +1,5 @@
 - Preface
+  - [Home](README.md)
   - [Before You Read](preface/before.md)
   - [About This Book](preface/about.md)
   - [IBMi Access / Software](preface/access.md)
