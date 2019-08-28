@@ -1,14 +1,15 @@
-# Learning the IBMi as a Lowly Web Dev
+<h1 align="center">Learning the IBMi as a Lowly Web Dev</h1>
 
 
 https://barrettotte.github.io/IBMi-Book/
 
 
-This is a "book" for curious developers to start learning how to program on the IBMi.
+<p>This is a "book" for curious developers to start learning how to program on the IBMi.</p>
 
+<br><br>
 
-## Docsify Notes
-* https://docsify.js.org
-* init ```docsify init ./docs```
-* serve ```docsify serve docs```
-
+<figure align="center">
+	<img src="./docs/core/ibmi/_assets/ibmi-02.PNG" alt="My AS/400" />
+	<figcaption align="center">
+	</figcaption>
+</figure>
