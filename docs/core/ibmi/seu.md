@@ -1,3 +1,3 @@
-# SEU
+# Source Entry Utility (SEU)
 
 Coming soon...

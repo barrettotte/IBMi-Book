@@ -1,3 +1,0 @@
-# Your First Program
-
-Coming soon...

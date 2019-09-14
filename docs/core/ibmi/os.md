@@ -24,6 +24,7 @@ Objects are stored in directory-like objects called libraries.
 A library is a way to logically organize objects.
 
 Users can create libraries, but there are also special system libraries shipped with the OS.
+Libraries that start with 'Q' are often system objects.
 Here are a few of them:
 * QSYS - Essential system objects
 * QSYS2 - Additional system objects
