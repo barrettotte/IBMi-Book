@@ -10,6 +10,7 @@ Timeshares will allow you to connect remotely to an IBMi system.
 * http://www.pub400.com/
 * http://www.rikascom.net/
 * http://www.timeshare400.com/
+
 Unfortunately, timeshare sites tend to be full and the system you use will not be updated to the current OS.
 
 

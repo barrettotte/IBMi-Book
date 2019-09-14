@@ -34,6 +34,11 @@ Additionally, more languages such as COBOL, REXX, C/C++, Python, Java, PHP, and 
 I will include some information and example programs in my [Other Languages](../other/) section.
 
 
+## Important Note
 I will reiterate that this will not be a full blown guide because I myself 
 don't know everything about the OS.
 But, I will provide some basics to get moving in this new ecosystem.
+
+Some of the concepts don't start to make complete sense until you've messed around
+in CL, DB2 SQL, and RPG. So if the concepts don't make sense at first, don't worry.
+
