@@ -34,5 +34,6 @@ Additionally, more languages such as COBOL, REXX, C/C++, Python, Java, PHP, and 
 I will include some information and example programs in my [Other Languages](../other/) section.
 
 
-<br><br>
-### More to come...
+I will reiterate that this will not be a full blown guide because I myself 
+don't know everything about the OS.
+But, I will provide some basics to get moving in this new ecosystem.
