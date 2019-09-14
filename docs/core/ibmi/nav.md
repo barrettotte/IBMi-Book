@@ -61,7 +61,6 @@ In general if I get confused about something I just start pressing **F1** on ran
 
 
 ## The Command Result
-
 Finally, a bunch of user profile values can be seen displayed for your user.
 <figure align="center">
 	<img src="./core/ibmi/_assets/ibmi-06.PNG" alt="DSPUSRPRF" />

@@ -5,9 +5,6 @@ If you can learn how to code in the green screen, you can learn how to code in a
 So, I will be using PDM and SEU for the rest of this book.
 
 
-This will be where we work with our library, source members, or objects.
-
-
 ## Creating a Source Physical File
 To mess around in PDM, we will make a source physical file.
 The first source physical file we need in the next chapter is **QCLLESRC** to hold our control language (CL) programs.
