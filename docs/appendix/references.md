@@ -6,6 +6,7 @@ Big list of references that I've used. I tried my hardest not to forget any.
 
 ## Book Resources
 * https://docsify.js.org
+* Pagination plugin https://github.com/imyelo/docsify-pagination
 * Xonokai theme https://github.com/PrismJS/prism-themes
 
 
