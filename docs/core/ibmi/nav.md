@@ -8,6 +8,9 @@ So, I'm going to walk through some basic navigation by calling a command in a fe
 The top section specifies valid options that can be entered into the **Opt** column.
 The bottom section specifies valid function keys that can be used in this context.
 Small note, to access **F13**-**F24** hold **SHIFT**. (F17 = F5+SHIFT)
+
+Above the bottom section is the command line, we will use it below.
+
 <figure align="center">
 	<img src="./core/ibmi/_assets/ibmi-13.PNG" alt="Input" />
 </figure>
