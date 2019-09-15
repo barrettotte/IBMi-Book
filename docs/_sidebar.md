@@ -34,6 +34,8 @@
     - [Overview](core/course/overview.md)
 
 - Additional Content
+  - [Miscellaneous](additional/misc/index.md)
+    - [Integrated File System](additional/misc/ifs/md)
   - [Example Programs](additional/examples/index.md)
   - [Other Languages](additional/other/index.md)
     - [C/C++](additional/other/cpp.md)
@@ -43,7 +45,6 @@
     - [PHP](additional/other/php.md)
     - [Python](additional/other/python.md)
     - [REXX](additional/other/rexx.md)
-  - [Miscellaneous](additional/misc/index.md)
   - [Calling the IBMi](additional/call/index.md)
     - [With C#](additional/call/csharp.md)
     - [With ColdFusion](additional/call/cf.md)

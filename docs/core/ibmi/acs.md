@@ -58,7 +58,7 @@ As the book goes on, I'll touch on a bit more of ACS roughly in the following se
 
 * **5250 Emulator** - This chapter
 * **Schemas** and **Run SQL Scripts** - DB2 SQL
-* **Integrated File System** - This chapter (briefly)
+* **Integrated File System** - Additional Content
 
 
 I should probably learn how to use some of the other sections, but I haven't gotten around to it yet.
