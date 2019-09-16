@@ -1,4 +1,4 @@
-# Learning the IBMi as a Lowly Web Dev
+# Learning the IBMi as a Lowly Web Developer
 
 
 https://barrettotte.github.io/IBMi-Book/
