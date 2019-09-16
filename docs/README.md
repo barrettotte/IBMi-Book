@@ -1,4 +1,4 @@
-<h1 align="center">Learning the IBMi as a Lowly Web Dev</h1>
+<h1 align="center">Learning the IBMi as a Lowly Web Developer</h1>
 
 <p align="center">This is a "book" for curious developers to start learning how to program on the IBMi.</p>
 
