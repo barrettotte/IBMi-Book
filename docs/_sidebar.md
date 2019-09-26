@@ -17,6 +17,7 @@
     - [Source Entry Utility](core/ibmi/seu.md)
   - [2. CL Programming](core/cl/index.md)
     - [Introduction](core/cl/intro.md)
+    - [Basics and Syntax](core/cl/basics.md)
   - [3. RPG Programming](core/rpg/index.md)
     - [Introduction](core/rpg/intro.md)
   - [4. RPG Free Programming](core/rpg-free/index.md)
