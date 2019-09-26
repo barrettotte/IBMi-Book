@@ -99,5 +99,7 @@ ENDDO
 ```
 
 
-## Miscellaneous
-* ```%SST(&MyStr 1 2)``` - Substring from 1 to 2
+## Built in functions
+* ```%BINARY(&x)``` or ```%BIN(&x)``` - Convert character to binary integer
+* ```%SUBSTRING(&MyStr 1 2)``` or ```%SST(&MyStr 1 2)``` - Substring from 1 to 2
+* Reference: https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rbam6/rbam6builtinfunc.htm
