@@ -36,7 +36,8 @@
 
 - Additional Content
   - [Miscellaneous](additional/misc/index.md)
-    - [Integrated File System](additional/misc/ifs/md)
+    - [Aldon and LMi](additional/misc/aldon.md)
+    - [Integrated File System](additional/misc/ifs.md)
   - [Example Programs](additional/examples/index.md)
   - [Other Languages](additional/other/index.md)
     - [C/C++](additional/other/cpp.md)
