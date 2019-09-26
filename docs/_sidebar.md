@@ -31,8 +31,8 @@
     - [Introduction](core/db2/intro.md)
   - [7. SQLRPGLE](core/sqlrpgle/index.md)
     - [Introduction](core/sqlrpgle/intro.md)
-  - [8. Course](core/course/index.md)
-    - [Overview](core/course/overview.md)
+  - [8. Final Project](core/project/index.md)
+    - [Overview](core/project/overview.md)
 
 - Additional Content
   - [Miscellaneous](additional/misc/index.md)
