@@ -1,6 +1,6 @@
 # Aldon and LMi
 
-A Brief set of notes on using Rocket Aldon Lifecycle Manager IBM i Edition (LMi).
+A Brief set of notes on using **Rocket Aldon Lifecycle Manager IBM i Edition (LMi)**.
 I don't really know too much since I've only used it a few times.
 
 
@@ -20,9 +20,7 @@ Unfortunately, it doesn't seem like there's a lot of information out there and I
 * PRD - Production
 
 
-## The Basics
-
-<br>
+## A Basic Checkout
 
 To begin, launch **LMi** using the command ```STRLMI```
 
@@ -38,6 +36,8 @@ Optional: Search for an object using the 'Position to' field
 
 Select object with option **3** to checkout
 
+<br>
+
 <figure align="center">
 	<img src="./additional/misc/_assets/aldon-02.PNG" alt="aldon" />
 </figure>
@@ -47,29 +47,24 @@ Select object with option **3** to checkout
 
 Enter a task number (in my shop's case it is a JIRA ticket number)
 
+**F3** back to Aldon main menu and take an option **2** for 'Work with objects by developer'.
 
-**F3** back to main Aldon menu and take an option **2** for 'Work with objects by developer'
+Now this object can be edited, compiled, etc. in this local environment (**DEV**) separate from everything.
 
 <figure align="center">
 	<img src="./additional/misc/_assets/aldon-03.PNG" alt="aldon" />
 </figure>
 
 
-<br>
+## A Basic Deploy
 
-Now this object can be edited, compiled, etc. in this local environment (**DEV**).
 To promote it up to the next environment (**ITG**), take an option **7**.
+Everytime I've used LMi (Maybe like 10 times) I use all of the defaults on the next few screens.
+This same process can be done to promote from **ITG** to **QUA** to **PRD**.
 
 
-<br>
-
-Everytime I've used LMi (Maybe like 10 times) I use all of the defaults on the following screens.
-
-
-<br>
-
-
-The same process can be done to promote from **ITG** to **QUA** to **PRD**.
+From what I've heard **deploying a view in Aldon is very janky**. 
+I found this out the hard way and had to get a lot of help.
 
 
 ## View Object Log
