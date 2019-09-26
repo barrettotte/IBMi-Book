@@ -18,6 +18,8 @@
   - [2. CL Programming](core/cl/index.md)
     - [Introduction](core/cl/intro.md)
     - [Basics and Syntax](core/cl/basics.md)
+    - [Your First CL Program](core/cl/firstpgm.md)
+    - [Small CL Project](core/cl/project.md)
   - [3. RPG Programming](core/rpg/index.md)
     - [Introduction](core/rpg/intro.md)
   - [4. RPG Free Programming](core/rpg-free/index.md)

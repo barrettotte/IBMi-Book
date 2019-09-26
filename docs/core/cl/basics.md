@@ -4,16 +4,16 @@ An overview of syntax and some of the basics in CL.
 
 
 ## Variables
-Declare with ```DCL VAR(&MyString) TYPE(*CHAR) LEN(8)```
-
-or using positional parameters ```DCL &MyString *CHAR 8```
+Declare with ```DCL VAR(&MyString) TYPE(*CHAR) LEN(8)``` or using positional parameters ```DCL &MyString *CHAR 8```
 
 In this example, the ```DCL``` command accepts some named parameters **VAR**, **TYPE**, **LEN**
 
 **An important note, a CL variable should begin with '&'**.
 
+<br>
 
-Types:
+
+**Variable Types:**
 
 | Type  | Name              |
 | ----- | ----------------- |
@@ -26,10 +26,7 @@ Types:
 
 <br>
 
-To update a variable's value, you use the **CHGVAR** command.
-
-
-```CHGVAR VAR(&MyString) VALUE('Hello')```
+To update a variable's value, you use the **CHGVAR** command. ```CHGVAR VAR(&MyString) VALUE('Hello')```
 
 
 ## Operators
@@ -69,11 +66,13 @@ CL has the expected operators you would find in most languages; with the additio
 
 If statements are also commands that have their own parameters (**COND** and **THEN**).
 
+
 ```php
 /* If Example - Named parameters */
 IF COND(&MyString = 'Hello')  +
   THEN(DSPUSRPRF)
 ```   
+
 
 ```php
 /* If Else Example */
@@ -81,6 +80,7 @@ IF (&MyNum = 5) THEN( +
   CHGVAR VAR(&MyNum) VALUE('AAA'))
 ELSE (CHGVAR VAR(&MyNum) VALUE('BBB'))
 ```
+
 
 ```php
 /* Nested If Example */
@@ -103,3 +103,5 @@ ENDDO
 * ```%BINARY(&x)``` or ```%BIN(&x)``` - Convert character to binary integer
 * ```%SUBSTRING(&MyStr 1 2)``` or ```%SST(&MyStr 1 2)``` - Substring from 1 to 2
 * Reference: https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rbam6/rbam6builtinfunc.htm
+
+
