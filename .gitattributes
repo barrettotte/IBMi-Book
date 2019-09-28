@@ -1,3 +1,4 @@
 *.CMD linguist-detectable=false
 *.MI linguist-detectable=false
 *.CLP linguist-detectable=false
+*.py linguist-detectable=false
