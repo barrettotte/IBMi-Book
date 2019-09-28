@@ -1,11 +1,12 @@
 # Before You Read
 
 ## Expectations
-As stated above, I am not an encyclopedia of IBMi knowledge. The more I learn about the IBMi, the less I feel like I know. I'm not a very smart person so **this could very well be the blind leading the blind**. But, hopefully this book has enough information to understand the IBMi a little bit.
+I am not an encyclopedia of IBMi knowledge. The more I learn about the IBMi, the less I feel like I know. I'm not a very smart person so **this could very well be the blind leading the blind**. Hopefully, this book has enough information to understand the IBMi a little bit.
 
 
 ## This is a WIP
-I expect to keep adding content to this "book" as I learn more content.
+I expect to keep adding content to this "book" as I learn more.
+More than likely, new content will be included in the **additional** section.
 
 
 ## Requirements
@@ -21,7 +22,7 @@ book, so it makes sense to just call it that.
 
 
 ## Source Code
-All of the code will be embedded on the pages of this book in the appropriate format. As far as source goes, 
+All of the code will be embedded in this book. As far as additional source goes, 
 I just have a huge dump of source code in an IBMi-like folder structure here https://github.com/barrettotte/IBM-RPG .
 This may or may not include all of the source listed in this book since its kind of just my dumping ground for code/notes.
 

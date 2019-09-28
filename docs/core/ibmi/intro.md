@@ -1,8 +1,8 @@
 # Introduction to IBMi
 
 
-The IBMi is a different kind of beast to program on when compared to Windows and *nix machines. In order to get started with programming 
-on the IBMi, I think its important to have a basic understanding of what it is.
+The IBMi is a different kind of beast to learn compared to the typical progamming environment. 
+In order to get started with programming on the IBMi, I think its important to have a basic understanding of what it is.
 
 
 <br>
@@ -30,8 +30,9 @@ There are quite a few languages native to the IBMi, I will be primarily covering
 * DB2 SQL
 * DDS/DSPF (More of a data format than a language)
 
+
 Additionally, more languages such as COBOL, REXX, C/C++, Python, Java, PHP, and NodeJS can be used through various means.
-I will include some information and example programs in my [Other Languages](../other/) section.
+I will include some basic information and example programs in my [Other Languages](../other/) section.
 
 
 ## Important Note

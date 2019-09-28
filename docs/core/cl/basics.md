@@ -93,8 +93,11 @@ IF (&MyStr1 = 'A') THEN( +
 Do loops work pretty much the same
 ```php
 /* Do Loop Example */
+DCL VAR(&MyNum) TYPE(*INT) VALUE(3)
+
 IF (&MyNum = 1) DO
   SNDUSRMSG MSG('Doing')
+  CHGVAR &MyNum &MyNum-1
 ENDDO
 ```
 

@@ -39,6 +39,7 @@
 - Additional Content
   - [Miscellaneous](additional/misc/index.md)
     - [Aldon and LMi](additional/misc/aldon.md)
+    - [Fetching Source Members](additional/misc/fetch.md)
     - [Integrated File System](additional/misc/ifs.md)
   - [Example Programs](additional/examples/index.md)
   - [Other Languages](additional/other/index.md)

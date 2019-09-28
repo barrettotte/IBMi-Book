@@ -6,12 +6,12 @@ Unfortunately, I believe it is getting harder to find sites to get IBMi access.
 
 
 ## Timeshares
-Timeshares will allow you to connect remotely to an IBMi system.
+Timeshares will allow you to connect remotely to a public IBMi system.
 * http://www.pub400.com/
 * http://www.rikascom.net/
 * http://www.timeshare400.com/
 
-Unfortunately, timeshare sites tend to be full and the system you use will not be updated to the current OS.
+Unfortunately, timeshare sites tend to be full and the system you use may not be updated to the current OS.
 
 
 ## Software
