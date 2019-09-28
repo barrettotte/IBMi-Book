@@ -3,6 +3,22 @@
 An overview of syntax and some of the basics in CL.
 
 
+## Casing and Formatting
+As you will see in this section and future sections, casing doesn't really matter.
+
+Some people like the format of ```SNDUSRMSG``` and others like ```SndUsrMsg```.
+
+The most important thing is to just be consistent with whatever you pick.
+
+
+## Comments
+```php
+/* I am a comment in CL         */
+/* Don't be fooled, this is not */
+/*   a multi-lined comment.     */
+```
+
+
 ## Variables
 Declare with ```DCL VAR(&MyString) TYPE(*CHAR) LEN(8)``` or using positional parameters ```DCL &MyString *CHAR 8```
 
@@ -95,7 +111,7 @@ Do loops work pretty much the same
 /* Do Loop Example */
 DCL VAR(&MyNum) TYPE(*INT) VALUE(3)
 
-IF (&MyNum = 1) DO
+DOUNTIL (&MyNum *GE 10)
   SNDUSRMSG MSG('Doing')
   CHGVAR &MyNum &MyNum-1
 ENDDO
@@ -108,3 +124,40 @@ ENDDO
 * Reference: https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rbam6/rbam6builtinfunc.htm
 
 
+## Labels and Go To
+TODO: ```GOTO```
+
+
+## Subroutines
+TODO: ```SUBR```, ```CALLSUBR SUBR(MYSUBR)```
+
+## Message Monitoring
+TODO: ```MONMSG```
+MONMSG MSGID(MCH3601) EXEC(GOTO ERRMP)
+
+
+## CL Program
+A CL program begins with the command ```PGM``` and ends with the ```ENDPGM``` command.
+Here is an example of a simple CL program. Don't worry about copying this into PDM.
+```php
+/* Input text and return it as msg */
+PGM
+  DCL &VAR1 *CHAR 48
+  SNDUSRMSG MSG('Input something') +
+        MSGTYPE(*INQ) Msgrpy(&VAR1)
+  SNDUSRMSG MSG(&VAR1)
+ENDPGM
+```
+
+
+## Parameters
+A CL program can also accept parameters in its invocation using the ```PARM``` command.
+A parameter coming in must be declared in the CL program in order to be used.
+
+```php
+PGM PARM(&name)
+  DCL VAR(&name) TYPE(*CHAR) LEN(10)
+  
+  SNDUSRMSG MSG('Hello' *BCAT &name)
+ENDPGM
+```

@@ -25,7 +25,7 @@ Name your library, set the library type to ***TEST**, optionally fill out a desc
 
 <br>
 
-Now to double check it worked, execute the command ```WRKLIBPDM BOLIB``` 
+Now to double check it worked, execute the command ```WRKLIBPDM YOURLIB``` 
 and you should see your library and a sneak peek at PDM.
 
 <figure align="center">

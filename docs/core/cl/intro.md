@@ -75,22 +75,10 @@ When parameters are included with the command call, they can be entered as named
 
 For example, the CHGCURLIB has a parameter for current library CURLIB.
 
-To specify it as a **named parameter**: ```CHGCURLIB CURLIB(OTTEB1)```
+To specify it as a **named parameter**: ```CHGCURLIB CURLIB(YOURLIB)```
 
-To specify it as a **positional parameter**: ```CHGCURLIB OTTEB```
+To specify it as a **positional parameter**: ```CHGCURLIB YOURLIB```
 
 
-## CL Program
-A CL program begins with the keyword ```PGM``` and ends with ```ENDPGM```.
-Here is an example of a simple CL program. Don't worry about copying this into PDM.
-```php
-/* Input text and return it as msg */
-Pgm
-  Dcl &Var1 *Char 48
-  SndUsrMsg Msg('Input something') +
-        MsgType(*Inq) Msgrpy(&Var1)
-  SndUsrMsg Msg(&Var1)
-EndPgm
-```
-This will be covered with more detail in a future section.
+
 

@@ -10,9 +10,9 @@ To mess around in PDM, we will make a source physical file.
 The first source physical file we need in the next chapter is **QCLLESRC** to hold our control language (CL) programs.
 
 For now, we will use the menu driven approach to getting to the right command to mix it up a bit.
-To change to our previously created library: In the command line, execute the command ```CHGCURLIB BOLIB```
+To change to our previously created library: In the command line, execute the command ```CHGCURLIB YOURLIB```
 
-Now, we'll start PDM to work with objects in our library. Execute the command ```WRKOBJPDM BOLIB```
+Now, we'll start PDM to work with objects in our library. Execute the command ```WRKOBJPDM YOURLIB```
 
 Press **F6** to start creating a file.
 
@@ -41,7 +41,7 @@ The member field will contain the source type we will use, in this case it will 
 
 <br>
 
-To test the SPF creation, execute the command ```WRKMBRPDM BOLIB/QCLLESRC```
+To test the SPF creation, execute the command ```WRKMBRPDM YOURLIB/QCLLESRC```
 and you should see the newly created SPF.
 <figure align="center">
 	<img src="./core/ibmi/_assets/pdm-04.PNG" alt="wrkmbrpdm" />

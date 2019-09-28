@@ -1,0 +1,22 @@
+{
+    "host": "PUB400.COM",
+    "user": "OTTEB",
+    "library": "OTTEB1",
+    "spfs": [
+        {
+            "name": "QCLLESRC",
+            "extension": "CLP",
+            "members": [
+                "CLFIZZBUZZ"
+            ]
+        },
+        {
+            "name": "QCMDSRC",
+            "extension": "CMD",
+            "members": [
+                "FIZZBUZZ"
+            ]
+        }
+    ],
+    "output": "./"
+}

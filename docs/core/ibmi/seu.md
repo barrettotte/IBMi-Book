@@ -9,7 +9,7 @@ throughout this book; it will build character.
 
 ## Creating a Source Member
 
-To get started, switch to the previously created CLLE SPF, execute the command ```WRKMBRPDM BOLIB/QCLLESRC```. Next, press **F6** to start SEU.
+To get started, switch to the previously created CLLE SPF, execute the command ```WRKMBRPDM YOURLIBRARY/QCLLESRC```. Next, press **F6** to start SEU.
 
 Fill in a program name into the source member field, I recommend **FIRSTCL** for this.
 Since we are within the context of a CLLE SPF the source type can remain ***SAME** and it will be
@@ -87,13 +87,13 @@ indicating that the compile was successful.
 ## Running Your First Program
 The compilation produces a **PGM** object in your library that you can call.
 
-Execute the command ```WRKOBJPDM BOLIB``` and you can see the list of objects within your library.
+Execute the command ```WRKOBJPDM YOURLIB``` and you can see the list of objects within your library.
 Something worth looking at is that there is no file with a **CLLE** type here.
 That is because our CL program is a source member within **QCLLESRC** and not a standalone object.
 However, you can see that our **PGM** object has an attribute of **CLLE**.
 
 To call this program, enter a **C** in the **Opt** column for **FIRSTCL**.
-Alternatively, you can call this program by entering the command ```CALL BOLIB/FIRSTCL```.
+Alternatively, you can call this program by entering the command ```CALL YOURLIB/FIRSTCL```.
 Using 'C' on a PGM is essentially a shortcut if your PGM doesn't need any parameters.
 <figure align="center">
 	<img src="./core/ibmi/_assets/seu-06.PNG" alt="call cl" />
