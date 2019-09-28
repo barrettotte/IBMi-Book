@@ -7,7 +7,8 @@
             "name": "QCLLESRC",
             "extension": "CLP",
             "members": [
-                "CLFIZZBUZZ"
+                "CLFIZZBUZZ",
+                "ECHO"
             ]
         },
         {

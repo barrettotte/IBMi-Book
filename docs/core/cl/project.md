@@ -17,27 +17,7 @@ TODO: QCMDSRC
 TODO: pictures
 
 
-## CL Source Physical File
 
-To start, enter the command ```WRKOBJPDM YOURLIB```
-
-In order to start writing CL programs, you need to make sure you have a CL source physical file (QCLLESRC).
-In the previous chapter a CL source physical file was created while learning about SEU.
-If you don't have it, please revisit that section.
-
-
-## CL Source Member
-
-Enter the command ```WRKMBRPDM YOURLIB/QCLLESRC```.
-
-
-To create a new CL source member press **F6**
-and populate the prompt as shown.
-
-TODO: Picture of CL member create  (CLFIZZBUZZ, CLLE, Fizzbuzz in CL)
-
-
-Press enter and you are brought to SEU.
 
 
 ## Fizzbuzz in CL
