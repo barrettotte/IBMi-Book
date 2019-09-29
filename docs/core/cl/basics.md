@@ -125,15 +125,49 @@ ENDDO
 
 
 ## Labels and Go To
-TODO: ```GOTO```
+Just like in BASIC and assembly, CL has labels and a ```GOTO``` command.
+If you are unfamiliar, a label has no functionality by itself, it just points to a place in code.
+Using ```GOTO MYLABEL``` would move execution to the label MYLABEL.
+```php
+PGM
+  SNDUSRMSG MSG('Hello')
+  GOTO SKIP
+
+  SNDUSRMSG MSG('I was skipped over')
+
+  SKIP:
+  SNDUSRMSG MSG('World')
+ENDPGM
+```
 
 
 ## Subroutines
-TODO: ```SUBR```, ```CALLSUBR SUBR(MYSUBR)```
+I don't have too much experience with subroutines.
+But, they are very useful for reusing blocks of code and managing program flow.
+```php
+PGM
+  CALLSUBR SUBR(SAYHELLO)
+
+  SUBR SUBR(SAYHELLO)
+    SNDUSRMSG MSG('Hello')
+  ENDSUBR
+
+ENDPGM
+```
+
 
 ## Message Monitoring
-TODO: ```MONMSG```
-MONMSG MSGID(MCH3601) EXEC(GOTO ERRMP)
+Another thing I don't have experience with is ```MONMSG```.
+But, this is essentially the CL equivalent of a Try/Catch.
+
+When a program fails at runtime, the error ID is given.
+This is essentially a catch for an error with the ID of MCH3601.
+
+```php
+/* Pretend a line that could generate MCH3601 error is here instead */
+
+MONMSG MSGID(MCH3601) EXEC(SNDUSRMSG('An error occurred :('))
+```
 
 
 ## CL Program
