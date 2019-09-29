@@ -1,23 +1,21 @@
 # Fetching Source Members from the IBMi
 
 
-After a month or so of learning the IBMi, I realized I wanted to start exporting my code to a GitHub repository.
-
-
 I will preface this section with saying that there is 100% a better way to include your source members in a repository.
 You could make some tooling on the IBMi itself and leverage the IFS in some way (I think).
 
 
 Instead, I decided to use something I was a little more comfortable with at the time. 
 I wrote a simple Python utility for pulling source members from the IBMi through FTP. 
-Its definitely not very performant, but I believe its very intuitive for someone new to the IBMi.
+Its definitely not performant, but I believe its very intuitive for someone new to the IBMi.
 
 
 One limitation to this utility is that it expects everything to be in a single library.
-The script can easily be changed to specify a library for each source physical file if really needed since its JSON configured.
+If needed, the script can easily be changed to specify a library 
+for each source physical file since its JSON configured and Python is a friendly language.
 
 
-To configure this utility, you include a ```repo.json``` file with member names and source physical file targets. 
+To configure this utility, you create a ```repo.json``` with member names and source physical file targets.
 Here is an example:
 
 ```json
@@ -55,9 +53,14 @@ Here is an example:
 }
 ```
 
+The fields **host** and **user** are optional. If they are not included, you will be prompted by the script for them.
+For the file extensions, I'm sure there's a way that I could set this up automatically. 
+But, I figured that I would leave it in a config file for complete configuration.
+
 <br>
 
 The Python script itself is very simple. 
+Open connection, read config file, loop over SPFs, fetch from IBMi, write source member text to file, close connection
 A more detailed explanation can be found here https://dev.to/barrettotte/simple-util-to-pull-code-from-the-ibmi-5hfp
 
 ```python

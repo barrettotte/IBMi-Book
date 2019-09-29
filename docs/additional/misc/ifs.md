@@ -8,23 +8,21 @@
 
 ## Light Introduction 
 
-I apologize ahead of time, I don't know very much about the history of the IFS.
+I apologize ahead of time, but I don't know very much about the history of the IFS.
 
 
-In the past, the IBMi only used its ancient file system to store data.
-At some point, the Integrated File System (IFS) was introduced which provided a UNIX like file system on the IBMi.
-
-This was an awesome feature because it makes storing and retrieving files on the IBMi much easier.
-Additionally, it provided a more user friendly approach to viewing and organizing files.
+In the past, the IBMi only used its "ancient" file system to store data.
+At some point, the **Integrated File System (IFS)** was introduced which provided a UNIX like file system on the IBMi.
+This provided a more user friendly approach to viewing and organizing files.
 
 
 
 ## Accessing the IFS within ACS
 
-Within Access Client Solutions there is an IFS browser at General > Integrated File System.
+Within Access Client Solutions there is an IFS browser located at ```General > Integrated File System```.
 
 
-After signing in again, you are brought to your user's home directory by default at **/home/YOURUSER**. 
+After signing in again, you are brought to your user's home directory by default at ```/home/YOURUSER```. 
 
 
 Within this menu you can fully manage files as you normally would in a UNIX file system.
@@ -37,7 +35,7 @@ Within this menu you can fully manage files as you normally would in a UNIX file
 ## Accessing the IFS with SSH
 
 Open a command prompt and enter ```YOURUSER@YOURBOX```.
-You should be prompted for your password and you will be redirected to **/home/YOURUSER**
+You should be prompted for your password and you will be redirected to ```/home/YOURUSER```
 
 <figure align="center">
 	<img src="./additional/misc/_assets/ifs-04.PNG" alt="IFS" />
@@ -46,17 +44,18 @@ You should be prompted for your password and you will be redirected to **/home/Y
 
 ## Navigating IBMi File System
 
-Within an IFS browser, navigate to **/QSYS.LIB** and you will see all of the libraries on your IBMi.
+Within an IFS browser, navigate to ```/QSYS.LIB``` and you will see all of the libraries on your IBMi.
 
 
-Navigate to **/QSYS.LIB/YOURLIB.LIB** and you will see all of the files within your library.
+Navigate to ```/QSYS.LIB/YOURLIB.LIB``` and you will see all of the files within your library.
 
 <figure align="center">
 	<img src="./additional/misc/_assets/ifs-05.PNG" alt="IFS" />
 </figure>
 
+<br>
 
-Navigate to **QSYS.LIB/YOURLIB.LIB/QRPGLESRC.FILE** and you will see all of the source members within your RPGLE source physical file.
+Navigate to ```QSYS.LIB/YOURLIB.LIB/QRPGLESRC.FILE``` and you will see all of the source members within your RPGLE source physical file.
 
 <figure align="center">
 	<img src="./additional/misc/_assets/ifs-06.PNG" alt="IFS" />

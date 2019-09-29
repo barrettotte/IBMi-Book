@@ -39,9 +39,8 @@
 - Additional Content
   - [Miscellaneous](additional/misc/index.md)
     - [Aldon and LMi](additional/misc/aldon.md)
-    - [Fetching Source Members](additional/misc/fetch.md)
+    - [Fetch Source Members via FTP](additional/misc/fetch.md)
     - [Integrated File System](additional/misc/ifs.md)
-  - [Example Programs](additional/examples/index.md)
   - [Other Languages](additional/other/index.md)
     - [C/C++](additional/other/cpp.md)
     - [COBOL](additional/other/cobol.md)

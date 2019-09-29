@@ -1,7 +1,10 @@
 # Aldon and LMi
 
-A Brief set of notes on using **Rocket Aldon Lifecycle Manager IBM i Edition (LMi)**.
-I don't really know too much since I've only used it a few times.
+A brief set of notes on using **Rocket Aldon Lifecycle Manager IBM i Edition (LMi)**.
+I don't really know too much since I've only used it a few times, but I can at least write down a couple of things.
+
+Unfortunately, it doesn't seem like there's a lot of information out there and I have minimal knowledge using this tool.
+I barely know how to do the Aldon equivalent of tying your shoes.
 
 
 ## What is it?
@@ -10,10 +13,10 @@ It manages changes, application releases, deployments, and version control.
 
 More can be read here https://www.rocketsoftware.com/products/rocket-aldon/rocket-aldon-lifecycle-manager-ibm-i-edition
 
-Unfortunately, it doesn't seem like there's a lot of information out there and I have minimal knowledge using this tool.
-
 
 ## Environments
+Environment naming is slightly different than you'd expect, but still intuitive.
+
 * DEV - Local development
 * ITG - Integration - development
 * QUA - QA Testing environment
@@ -30,11 +33,11 @@ To begin, launch **LMi** using the command ```STRLMI```
 
 <br>
 
-Begin checkout process by taking an option **1** for 'Work with objects by release'.
+Begin the checkout process by taking an option **1** for ```Work with objects by release```.
 
-Optional: Search for an object using the 'Position to' field
+Optionally, you can quickly search for an object by typing into the ```Position to``` field at the top of the screen.
 
-Select object with option **3** to checkout
+Take an option **3** on your target object to checkout to your local environment.
 
 <br>
 
@@ -45,9 +48,10 @@ Select object with option **3** to checkout
 
 <br>
 
-Enter a task number (in my shop's case it is a JIRA ticket number)
+If needed, enter a task number. 
+In my shop's case someone made a utility in JIRA to create JIRA tickets in LMi (sorry can't share it).
 
-**F3** back to Aldon main menu and take an option **2** for 'Work with objects by developer'.
+**F3** back to the Aldon main menu and take an option **2** for ```Work with objects by developer```.
 
 Now this object can be edited, compiled, etc. in this local environment (**DEV**) separate from everything.
 
@@ -58,7 +62,7 @@ Now this object can be edited, compiled, etc. in this local environment (**DEV**
 
 ## A Basic Deploy
 
-To promote it up to the next environment (**ITG**), take an option **7**.
+To promote an object up to the next environment (**ITG**), take an option **7**.
 Everytime I've used LMi (Maybe like 10 times) I use all of the defaults on the next few screens.
 This same process can be done to promote from **ITG** to **QUA** to **PRD**.
 
@@ -70,7 +74,7 @@ I found this out the hard way and had to get a lot of help.
 ## View Object Log
 
 Additionally, you can view the log of an object by taking an option **7** while 
-inside of the 'Work with objects by release' menu.
+inside of the ```Work with objects by release``` menu.
 
 Here you can see each time an object was checked out or promoted.
 
