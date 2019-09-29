@@ -1,4 +1,5 @@
 #!/bin/bash
+
 docsify serve docs
 
-# pure laziness
+# listens on http://localhost:3000
