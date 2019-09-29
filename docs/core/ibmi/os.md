@@ -5,8 +5,11 @@ I will go over some of the basics needed to be prepared for learning the IBMi.
 Don't expect to fully understand everything at first, everything will get clearer
 once you get your hands dirty.
 
+I truthfully skipped over a lot of the operating system concepts when I decided to start learning.
+After coding around in the IBMi for a little while, the concepts are learned by accident.
 
-I myself have some holes in my knowledge such as journaling, user/group profiles, and printing.
+
+I also have holes in my knowledge when it comes to things such as journaling, user/group profiles, and printing.
 If I end up learning some missing information, I will add it to this section.
 
 
