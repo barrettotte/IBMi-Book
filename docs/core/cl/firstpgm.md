@@ -195,5 +195,5 @@ The error messages I've seen usually seem to be pretty intuitive.
 <br>
 
 Errors definitely aren't always that easy to spot/fix, but this was just a good example
-for learning the basics of compiling/WRKSPLF.
+for learning the basics of compiling and the ```WRKSPLF``` command.
 
