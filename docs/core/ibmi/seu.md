@@ -45,7 +45,7 @@ With each line that you enter, pressing **ENTER** will advance to the next line.
 This program will be something you've seen before, a CL program to display your user profile.
 ```
 PGM
-  DSPUSRPRF OTTEB
+  DSPUSRPRF YOURUSER
 ENDPGM
 ```
 
@@ -56,6 +56,18 @@ Press **F3** and you can see the exit prompt.
 Be sure to switch **Change/create member** to **Y** and **Return to editing** to **N**
 <figure align="center">
 	<img src="./core/ibmi/_assets/seu-02.PNG" alt="save" />
+</figure>
+
+
+## Switching to Batch Compilation
+To change the compilation process to Batch, press **F18**.
+
+Scroll to the field for ```Compile in batch``` and input a 'Y'.
+
+Press **F3** to exit.
+
+<figure align="center">
+	<img src="./core/ibmi/_assets/seu-07.PNG" alt="batch compile" />
 </figure>
 
 
