@@ -1,4 +1,21 @@
-*.CMD linguist-detectable=false
-*.MI linguist-detectable=false
-*.CLP linguist-detectable=false
-*.py linguist-detectable=false
+## This is a book, leave the repo as HTML
+
+*.CMD       linguist-detectable=false
+*.MI        linguist-detectable=false
+*.CLP       linguist-detectable=false
+*.SQLRPGLE  linguist-detectable=false
+*.RPGLE     linguist-detectable=false
+*.RPG       linguist-detectable=false
+*.LF        linguist-detectable=false
+*.PF        linguist-detectable=false
+*.DSPF      linguist-detectable=false
+*.CLLE      linguist-detectable=false
+*.SQL       linguist-detectable=false
+*.sql       linguist-detectable=false
+
+*.py        linguist-detectable=false
+*.rb        linguist-detectable=false
+*.cs        linguist-detectable=false
+*.cfc       linguist-detectable=false
+*.cfm       linguist-detectable=false
+*.java      linguist-detectable=false
