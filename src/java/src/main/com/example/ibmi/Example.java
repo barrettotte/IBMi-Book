@@ -67,7 +67,7 @@ public class Example {
         try{
             Class.forName(s);
         } catch(final ClassNotFoundException e) {
-            System.out.println("AS400JDBCDriver could not be found." + e);
+            System.out.println(s + " could not be found. " + e);
             System.exit(0);
         }
     }
