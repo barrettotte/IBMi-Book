@@ -1,9 +1,10 @@
 /* Fizzbuzz in CL */
 
-PGM /*PARM(&iter)*/
+PGM PARM(&inIter)
 
          /* Variable Declarations */
-         DCL VAR(&iter)    TYPE(*DEC)  LEN(2 0) VALUE(20)
+         DCL VAR(&inIter)  TYPE(*CHAR) LEN(10)
+         DCL VAR(&iter)    TYPE(*DEC)  LEN(2 0) VALUE(1)
          DCL VAR(&curIter) TYPE(*DEC)  LEN(2 0) VALUE(1)
          DCL VAR(&uname)   TYPE(*CHAR) LEN(10)
          DCL VAR(&outMsg)  TYPE(*CHAR) LEN(64)
@@ -15,23 +16,30 @@ PGM /*PARM(&iter)*/
          DCL VAR(&modRem)  TYPE(*DEC)  LEN(2 0)
 
 
+         /* Convert input char to correct data type */
+         CHGVAR VAR(&iter) VALUE(%INT(&inIter))
+
+
          /* Fetch username of current user */
          RTVUSRPRF USRPRF(*CURRENT) RTNUSRPRF(&uname)
+
 
          /* Output greeting message with username */
          CHGVAR VAR(&outMsg) VALUE('Hello' *BCAT &uname *TCAT 'Ü')
          SNDUSRMSG MSG(&outMsg)
 
+
          /* Simple sanity check message (optional) */
          CHGVAR VAR(&outMsg) VALUE('Running Fizzbuzz for' +
-             *BCAT %CHAR(&iter) *BCAT 'iteration(s)')
+            *BCAT %CHAR(&iter) *BCAT 'iteration(s)')
          SNDUSRMSG MSG(&outMsg)
+
 
          /* Fizzbuzz loop */
          DOUNTIL (&curIter *GT &iter)
-             CHGVAR VAR(&modLft) VALUE(&curIter)
-             CALLSUBR SUBR(FZBZ)
-             CHGVAR VAR(&curIter) VALUE(&curIter + 1)
+            CHGVAR VAR(&modLft) VALUE(&curIter)
+            CALLSUBR SUBR(FZBZ)
+            CHGVAR VAR(&curIter) VALUE(&curIter + 1)
          ENDDO
          GOTO END
 
