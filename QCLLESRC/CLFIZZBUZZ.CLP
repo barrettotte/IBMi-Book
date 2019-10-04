@@ -2,7 +2,7 @@
 /*                      Fizzbuzz in CL                               */
 /*                                                                   */
 /*   Call using CMD    FIZZBUZZ(10)                                  */
-/*   Call using  CL    CALL FIZZBUZZ PARM('10')                      */
+/*   Call using  CL    CALL CLFIZZBUZZ PARM('10')                    */
 /*                                                                   */
 /*********************************************************************/
 
