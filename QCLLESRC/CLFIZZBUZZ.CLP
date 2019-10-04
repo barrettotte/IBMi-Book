@@ -19,18 +19,20 @@ PGM PARM(&inIter)
 
          /* Convert input char to correct data type */
          CHGVAR VAR(&iter) VALUE(%INT(&inIter))
+         MONMSG MSGID(CPF0818) EXEC(GOTO BADPARM)
+         MONMSG MSGID(MCH3601) EXEC(GOTO BADPARM)
 
          /* Fetch username of current user */
          RTVUSRPRF USRPRF(*CURRENT) RTNUSRPRF(&uname)
 
          /* Output greeting message with username */
          CHGVAR VAR(&outMsg) VALUE('Hello' *BCAT &uname)
-         SNDUSRMSG MSG(&outMsg)
+         SNDUSRMSG MSG(&outMsg) MSGTYPE(*INFO)
 
          /* Simple sanity check message (optional) */
          CHGVAR VAR(&outMsg) VALUE('Running Fizzbuzz for' +
             *BCAT %CHAR(&iter) *BCAT 'iteration(s)')
-         SNDUSRMSG MSG(&outMsg)
+         SNDUSRMSG MSG(&outMsg) MSGTYPE(*INFO)
 
          /* Fizzbuzz loop */
          DOUNTIL (&curIter *GT &iter)
@@ -41,8 +43,15 @@ PGM PARM(&inIter)
          GOTO END
 
 
+BADPARM: SNDUSRMSG MSG('Bad iteration parameter passed.') +
+            MSGTYPE(*INFO)
+
+END:     SNDUSRMSG MSG('Done') MSGTYPE(*INFO)
+
+
 SUBR     SUBR(PRNT)
-         SNDUSRMSG MSG(%CHAR(&curIter) *BCAT '-' *BCAT &outMsg)
+         SNDUSRMSG MSG(%CHAR(&curIter) *BCAT '-' *BCAT &outMsg) +
+            MSGTYPE(*INFO)
 ENDSUBR
 
 
@@ -79,9 +88,6 @@ SUBR     SUBR(MOD)
          CHGVAR VAR(&modTmp) VALUE(&modRes * &modRgt)
          CHGVAR VAR(&modRem) VALUE(&modLft - &modTmp)
 ENDSUBR
-
-
-END:
 
 
 ENDPGM

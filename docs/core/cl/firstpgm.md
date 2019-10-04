@@ -83,7 +83,9 @@ SNDUSRMSG MSG(&in)
 
 ## Complete Source
 ```php
-/* Prompt for user input and echo it back as a message */  
+/* QCLLESRC/ECHO */
+
+/* Prompt for user input and echo it back as a message */
 PGM                                 
                                     
   DCL VAR(&in) TYPE(*CHAR) LEN(64)  
@@ -95,7 +97,7 @@ PGM
                                     
 ENDPGM                              
 ```
-
+Also found at https://github.com/barrettotte/IBMi-Book/blob/master/QCLLESRC/ECHO.CLP
 
 ## Compile
 Now that the source is entered, press **F3** to save the source member.
