@@ -23,9 +23,8 @@ PGM PARM(&inIter)
          /* Fetch username of current user */
          RTVUSRPRF USRPRF(*CURRENT) RTNUSRPRF(&uname)
 
-
          /* Output greeting message with username */
-         CHGVAR VAR(&outMsg) VALUE('Hello' *BCAT &uname *TCAT '!')
+         CHGVAR VAR(&outMsg) VALUE('Hello' *BCAT &uname)
          SNDUSRMSG MSG(&outMsg)
 
          /* Simple sanity check message (optional) */
@@ -40,6 +39,7 @@ PGM PARM(&inIter)
             CHGVAR VAR(&curIter) VALUE(&curIter + 1)
          ENDDO
          GOTO END
+
 
 SUBR     SUBR(PRNT)
          SNDUSRMSG MSG(%CHAR(&curIter) *BCAT '-' *BCAT &outMsg)
