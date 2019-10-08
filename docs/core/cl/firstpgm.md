@@ -82,6 +82,8 @@ SNDUSRMSG MSG(&in)
 <br>
 
 ## Complete Source
+Also found at https://github.com/barrettotte/IBMi-Book/blob/master/QCLLESRC/ECHO.CLP
+
 ```php
 /* QCLLESRC/ECHO */
 
@@ -97,7 +99,6 @@ PGM
                                     
 ENDPGM                              
 ```
-Also found at https://github.com/barrettotte/IBMi-Book/blob/master/QCLLESRC/ECHO.CLP
 
 ## Compile
 Now that the source is entered, press **F3** to save the source member.
