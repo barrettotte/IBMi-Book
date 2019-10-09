@@ -48,7 +48,9 @@ We need to create a new CL source member, so first run ```WRKMBRPDM YOURLIB/QCLL
 Press **F6** and fill out the new member's fields. In my case I named this source member **CLFIZZBUZZ** 
 (warning, we're going to be doing this program again in RPG).
 
-TODO: Picture of source member create
+<figure align="center">
+	<img src="./core/cl/_assets/cl-11.PNG" alt="CL create member" />
+</figure>
 
 <br>
 
@@ -372,7 +374,9 @@ Now that the CL source has been entered, its time to compile it to a program. Ta
 If a compilation error occurs, refer back to [Your First CL Program](https://barrettotte.github.io/IBMi-Book/#/core/cl/firstpgm?id=compile-errors-and-wrksplf).
 
 
-TODO: Picture of CL compilation
+<figure align="center">
+	<img src="./core/cl/_assets/cl-12.PNG" alt="compile" />
+</figure>
 
 <br>
 
@@ -382,48 +386,17 @@ Alternatively, you could type in ```CALL CLFIZZBUZZ```, press **F4**, and enter 
 **WARNING**: This outputs a message for each iteration. 
 Don't pass in a large number or you're going to be sitting there hitting **ENTER** for a while.
 
-TODO: Picture of F4 prompt
+<figure align="center">
+	<img src="./core/cl/_assets/cl-13.PNG" alt="prompt" />
+</figure>
 
 <br>
 
 If all goes well, you should see something around the following output.
 
-TODO: Picture of output
-
-<br>
-
-## Building a Fizzbuzz Command
-For extra practice, we're going to make a fizzbuzz command as a wrapper for our previously created ```CLFIZZBUZZ``` program.
-
-First, let's make a CMD source member in QCMDSRC. 
-Run ```WRKMBRPDM YOURLIB/QCMDSRC``` and press **F6**.
-
-TODO: picture of src mbr create
-
-<br>
-
-This command is super simple. We just make a wrapper for the iterations parameter as a character type and non-blank.
-```php
-CMD  PROMPT('FIZZBUZZ')
-
-            PARM       KWD(ITER) TYPE(*CHAR) LEN(10) MIN(1) +
-                         PROMPT('ITERATIONS')
-```
-
-<br>
-
-Take an option **14** on the ```FIZZBUZZ``` source member.
-To finish creating the command enter ```CRTCMD``` and press **F4**.
-
-Fill out the following information to create the command:
-
-TODO: picture of crtcmd
-
-<br>
-
-To run the new command, enter ```FIZZBUZZ('5')``` and it should behave the exact same way as running ```CALL CLFIZZBUZZ PARM('5')```.
-
-TODO: picture of output
+<figure align="center">
+	<img src="./core/cl/_assets/cl-14.PNG" alt="output" />
+</figure>
 
 <br>
 

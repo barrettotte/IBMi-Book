@@ -11,27 +11,47 @@ Making a CMD offers some benefits:
 * Can be used with ILE languages (CL, RPGLE, C, etc.)
 
 
-For practice, we are going to build a small CL with a simple CMD over top of it.
+## Building a Fizzbuzz Command
+For extra practice, we're going to make a fizzbuzz command as a wrapper for our previously created ```CLFIZZBUZZ``` program.
 
+First, let's make a CMD source member in QCMDSRC. 
+Run ```WRKMBRPDM YOURLIB/QCMDSRC``` and press **F6**.
 
-## Example CL
-For this example, the CL will take in 3 parameters (a string and two numbers).
-The program will output the string, the numbers, and the results of operations using the numbers.
+<figure align="center">
+	<img src="./core/cl/_assets/cl-15.PNG" alt="cmd create" />
+</figure>
 
+<br>
 
-TODO:
+This command is super simple. We just make a wrapper for the iterations parameter as a character type and non-blank.
+```php
+CMD  PROMPT('FIZZBUZZ')
 
+            PARM       KWD(ITER) TYPE(*CHAR) LEN(10) MIN(1) +
+                         PROMPT('ITERATIONS')
+```
 
-## Writing your first CMD
-* ```CRTSRCPF```
-* Create CMD source member, compile
-* ```CRTCMD```
+<br>
 
+Take an option **14** on the ```FIZZBUZZ``` source member.
+To finish creating the command enter ```CRTCMD``` and press **F4**.
 
-## Compiling and creating your first CMD
-TODO:
+Fill out the following information to create the command:
 
+<figure align="center">
+	<img src="./core/cl/_assets/cl-16.PNG" alt="cmd create" />
+</figure>
 
-## Running the CL Program using your new CMD
-TODO:
+<br>
 
+To run the new command, enter ```FIZZBUZZ('5')``` and it should behave the exact same way as running ```CALL CLFIZZBUZZ PARM('5')```.
+
+<figure align="center">
+	<img src="./core/cl/_assets/cl-17.PNG" alt="cmd" />
+</figure>
+
+<br>
+
+<figure align="center">
+	<img src="./core/cl/_assets/cl-18.PNG" alt="cmd exec" />
+</figure>
