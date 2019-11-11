@@ -11,8 +11,8 @@
 I apologize ahead of time, but I don't know very much about the history of the IFS.
 
 
-In the past, the IBMi only used its "ancient" file system to store data.
-At some point, the **Integrated File System (IFS)** was introduced which provided a UNIX like file system on the IBMi.
+In the past, IBM i only used its "ancient" file system to store data.
+At some point, the **Integrated File System (IFS)** was introduced which provided a UNIX like file system on IBM i.
 This provided a more user friendly approach to viewing and organizing files.
 
 
@@ -42,9 +42,9 @@ You should be prompted for your password and you will be redirected to ```/home/
 </figure>
 
 
-## Navigating IBMi File System
+## Navigating IBM i File System
 
-Within an IFS browser, navigate to ```/QSYS.LIB``` and you will see all of the libraries on your IBMi.
+Within an IFS browser, navigate to ```/QSYS.LIB``` and you will see all of the libraries on IBM i.
 
 
 Navigate to ```/QSYS.LIB/YOURLIB.LIB``` and you will see all of the files within your library.

@@ -1,3 +1,3 @@
-# Calling the IBMi with Python
+# Calling IBM i with Python
 
 Coming soon...

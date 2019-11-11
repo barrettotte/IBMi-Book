@@ -1,3 +1,3 @@
-# Java on IBMi
+# Java on IBM i
 
 Coming soon...

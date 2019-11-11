@@ -3,7 +3,7 @@
 <br>
 
 **ATTENTION!**
-The rest of this book assumes that you gained the trust of a wise IBMi developer
+The rest of this book assumes that you gained the trust of a wise IBM i developer
 and they set you up with a user profile and a user library. 
 
 

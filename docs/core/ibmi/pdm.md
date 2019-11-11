@@ -1,6 +1,6 @@
 # Programming Development Manager (PDM)
 
-Using PDM and SEU are the "classic" way of developing on the IBMi.
+Using PDM and SEU are the "classic" way of developing in IBM i.
 If you can learn how to code in the green screen, you can learn how to code in a more advanced tool.
 So, I will be using PDM and SEU for the rest of this book.
 

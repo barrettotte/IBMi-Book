@@ -1,12 +1,12 @@
-# IBMi Access and Software
+# IBM i Access and Software
 
-This book relies on having access to an IBMi running V7R3+. 
-At my current workplace I was lucky enough to be given access to the IBMi. Otherwise, this book would have never been made.
-Unfortunately, I believe it is getting harder to find sites to get IBMi access.
+This book relies on having access to IBM i V7R3+. 
+At my current workplace I was lucky enough to be given access to IBM i. Otherwise, this book would have never been made.
+Unfortunately, I believe it is getting harder to find sites to get IBM i access.
 
 
 ## Timeshares
-Timeshares will allow you to connect remotely to a public IBMi system.
+Timeshares will allow you to connect remotely to a public IBM i session.
 * http://www.pub400.com/
 * http://www.rikascom.net/
 * http://www.timeshare400.com/
@@ -17,7 +17,7 @@ Unfortunately, timeshare sites tend to be full and the system you use may not be
 ## Software
 * IBM Access Client Solutions - http://www-01.ibm.com/support/docview.wss?uid=nas8N1010355
 * ILE Editor - https://github.com/worksofbarry/ILEditor
-* I am casually working on an IBMi Visual Studio Code extension, but no estimation on when that will be finished.
+* I am casually working on an IBM i Visual Studio Code extension, but no estimation on when that will be finished.
 
 
 <br>

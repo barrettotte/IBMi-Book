@@ -1,12 +1,12 @@
-# IBMi OS Concepts
+# IBM i Concepts
 
-So, the IBMi OS has a lot to it.
-I will go over some of the basics needed to be prepared for learning the IBMi.
+So, IBM i has a lot to it.
+I will go over some of the basics needed to be prepared for learning IBM i.
 Don't expect to fully understand everything at first, everything will get clearer
 once you get your hands dirty.
 
 I truthfully skipped over a lot of the operating system concepts when I decided to start learning.
-After coding around in the IBMi for a little while, the concepts are learned by accident.
+After coding around in IBM i for a little while, the concepts are learned by accident.
 
 
 I also have holes in my knowledge when it comes to things such as journaling, user/group profiles, and printing.
@@ -14,7 +14,7 @@ If I end up learning some missing information, I will add it to this section.
 
 
 ## Object
-Anything on the IBMi that has a name is considered an object.
+Anything on IBM i that has a name is considered an object.
 Each object has its own **object type**, to dictate how it is used by the system.
 Examples of object types:
 * *USRPRF - user profiles

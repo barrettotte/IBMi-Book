@@ -1,6 +1,6 @@
-<h1 align="center">Learning the IBMi as a Lowly Web Developer</h1>
+<h1 align="center">Learning IBM i as a Lowly Web Developer</h1>
 
-<p align="center">This is a "book" for curious developers to start learning how to program on the IBMi.</p>
+<p align="center">This is a "book" for curious developers to start learning how to program on IBM i.</p>
 
 <br><br>
 

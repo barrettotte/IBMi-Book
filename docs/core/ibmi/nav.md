@@ -1,6 +1,6 @@
 ## Navigation
 
-Luckily, a lot of the screens on the IBMi handle the same way.
+Luckily, a lot of the screens on the IBM i handle the same way.
 So, I'm going to walk through some basic navigation by calling a command in a few different ways.
 
 
@@ -51,7 +51,7 @@ This may or may not help, but the more information the better.
 </figure>
 
 
-One of the most valuable part of the IBMi is the integrated help menu.
+One of the most valuable parts of IBM i is the integrated help menu.
 If you position the cursor over the description for User Profile and press **F1**
 a help popup will appear with more information about the parameter you need to fill.
 In general if I get confused about something I just start pressing **F1** on random things like a mad man.

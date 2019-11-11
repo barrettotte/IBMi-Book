@@ -1,6 +1,6 @@
 <html>
     <body>
-        <h2>Calling the IBMi with ColdFusion</h2>
+        <h2>Calling IBM i with ColdFusion</h2>
         <hr>
         <cfscript>
             local.sql = "

@@ -1,3 +1,3 @@
-# Calling the IBMi with Node
+# Calling IBM i with Node
 
 Coming soon...

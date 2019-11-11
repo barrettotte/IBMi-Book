@@ -1,5 +1,5 @@
-# Calling the IBMi
+# Calling IBM i
 
-Examples of setting up a database connection to the IBMi and running a simple query in various languages.
+Examples of setting up a database connection to IBM i and running a simple query in various languages.
 
 

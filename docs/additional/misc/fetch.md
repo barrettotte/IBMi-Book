@@ -1,13 +1,13 @@
-# Fetching Source Members from the IBMi
+# Fetching Source Members from IBM i
 
 
 I will preface this section with saying that there is 100% a better way to include your source members in a repository.
-You could make some tooling on the IBMi itself and leverage the IFS in some way (I think).
+You could make some tooling in IBM i itself and leverage the IFS in some way (I think).
 
 
 Instead, I decided to use something I was a little more comfortable with at the time. 
-I wrote a simple Python utility for pulling source members from the IBMi through FTP. 
-Its definitely not performant, but I believe its very intuitive for someone new to the IBMi.
+I wrote a simple Python utility for pulling source members from IBM i through FTP. 
+Its definitely not performant, but I believe its very intuitive for someone new to IBM i.
 
 
 One limitation to this utility is that it expects everything to be in a single library.
@@ -60,11 +60,11 @@ But, I figured that I would leave it in a config file for complete configuration
 <br>
 
 The Python script itself is very simple. 
-Open connection, read config file, loop over SPFs, fetch from IBMi, write source member text to file, close connection
+Open connection, read config file, loop over SPFs, fetch from IBM i, write source member text to file, close connection
 A more detailed explanation can be found here https://dev.to/barrettotte/simple-util-to-pull-code-from-the-ibmi-5hfp
 
 ```python
-# Quick and very dirty util for fetching a couple files from the IBMi so I can "version control" them.
+# Quick and very dirty util for fetching a couple files from IBM i so I can "version control" them.
 
 import ftplib, json, getpass, os
 config = {}

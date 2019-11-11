@@ -1,10 +1,10 @@
-# Learning the IBMi as a Lowly Web Developer
+# Learning IBM i as a Lowly Web Developer
 
 
 https://barrettotte.github.io/IBMi-Book/
 
 
-<p>This is a "book" for curious developers to start learning how to program on the IBMi.</p>
+<p>This is a "book" for curious developers to start learning how to program on IBM i.</p>
 
 <br>
 

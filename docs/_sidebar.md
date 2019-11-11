@@ -2,10 +2,10 @@
   - [Home](README.md)
   - [Before You Read](preface/before.md)
   - [About This Book](preface/about.md)
-  - [IBMi Access / Software](preface/access.md)
+  - [IBM i Access / Software](preface/access.md)
 
 - Core
-  - [1. The IBMi](core/ibmi/index.md)
+  - [1. IBM i](core/ibmi/index.md)
     - [Introduction](core/ibmi/intro.md)
     - [History](core/ibmi/history.md)
     - [Access Client Solutions](core/ibmi/acs.md)
@@ -49,7 +49,7 @@
     - [PHP](additional/other/php.md)
     - [Python](additional/other/python.md)
     - [REXX](additional/other/rexx.md)
-  - [Calling the IBMi](additional/call/index.md)
+  - [Calling IBM i](additional/call/index.md)
     - [With C#](additional/call/csharp.md)
     - [With ColdFusion](additional/call/cf.md)
     - [With Java](additional/call/java.md)

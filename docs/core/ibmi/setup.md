@@ -2,7 +2,7 @@
 
 To finish this chapter and continue in this book, we need to setup a library and some files.
 Hopefully, your user profile that was setup has the permissions necessary to do this.
-If not, ask your nearest IBMi disciple.
+If not, ask your nearest IBM i disciple.
 
 
 ## Creating a Test Library

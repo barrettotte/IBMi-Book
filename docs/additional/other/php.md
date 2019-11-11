@@ -1,3 +1,3 @@
-# PHP on IBMi
+# PHP on IBM i
 
 Coming soon...

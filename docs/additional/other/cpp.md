@@ -1,3 +1,3 @@
-# C/C++ on IBMi
+# C/C++ on IBM i
 
 Coming soon...

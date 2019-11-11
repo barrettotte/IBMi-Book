@@ -1,15 +1,15 @@
-# Calling the IBMi with Java
+# Calling IBM i with Java
 
 Luckily, there is a pretty sweet package called **JTOpen** found at http://jt400.sourceforge.net/ and 
 https://mvnrepository.com/artifact/net.sf.jt400/jt400/9.6
 
-The package provides a bunch of awesome features to make interfacing with the IBMi easier.
+The package provides a bunch of awesome features to make interfacing with IBM i easier.
 This example will only use it to run a DB2 SQL statement.
 
 
 ## Example Program
-To demonstrate communicating with the IBMi, we will be making a very simple java program.
-It will connect to the IBMi, run a DB2 SQL statement, output the results, and close the connection.
+To demonstrate communicating with IBM i, we will be making a very simple java program.
+It will connect to IBM i, run a DB2 SQL statement, output the results, and close the connection.
 
 The SQL execution will return a resultset of source members found in all PFs within a targeted library.
 
@@ -121,7 +121,7 @@ Next, we're going to add the shell for handling a connection/resultset and readi
 
 public static void main(String[] args){
     final Example ex = new Example();
-    final Properties cfg = ex.getAS400Config();           // Get IBMi credentials
+    final Properties cfg = ex.getAS400Config();           // Get IBM i credentials
     ex.classLoad("com.ibm.as400.access.AS400JDBCDriver"); // Ensure class is loaded
 
     final String sql = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_PARTITION, SOURCE_TYPE " +
@@ -162,7 +162,7 @@ public static void main(String[] args){
 
 <br>
 
-Next, make two utility methods. The first is for creating the SQL connection to the IBMi using the credentials from the properties file that was loaded. The second is a simple method for printing a resultset to the console.
+Next, make two utility methods. The first is for creating the SQL connection to IBM i using the credentials from the properties file that was loaded. The second is a simple method for printing a resultset to the console.
 
 ```java
 // Example.java
@@ -241,8 +241,8 @@ public static void main(String[] args){
 
 <br>
 
-After all that setup, now we're going to query the IBMi with the SQL string that's been hanging out doing nothing.
-The three new lines just query the IBMi and print the resultset to console.
+After all that setup, now we're going to query IBM i with the SQL string that's been hanging out doing nothing.
+The three new lines just query IBM i and print the resultset to console.
 ```java
 // Example.java
 

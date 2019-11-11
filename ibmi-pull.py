@@ -1,4 +1,4 @@
-# Quick and very dirty util for fetching a couple files from the IBMi so I can "version control" them.
+# Quick and very dirty util for fetching a couple files from IBM i so I can "version control" them.
 
 import ftplib, json, getpass, os
 config = {}

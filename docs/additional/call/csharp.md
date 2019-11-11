@@ -1,3 +1,3 @@
-# Calling the IBMi with C# #
+# Calling IBM i with C# #
 
 Coming soon...

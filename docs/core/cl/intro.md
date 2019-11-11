@@ -6,7 +6,7 @@ CL is a programming language meant for running system commands, not database int
 For more complex tasks using RPG, SQL, or COBOL would be a better tool.
 
 CL commands can be run in the command prompt or grouped together and compiled into a CL program.
-Pretty much everything run on the IBMi is triggered through some kind of CL command(s).
+Pretty much everything run on IBM i is triggered through some kind of CL command(s).
 
 
 ## Before Continuing

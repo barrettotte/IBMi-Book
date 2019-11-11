@@ -1,3 +1,3 @@
-# Calling the IBMi with Ruby
+# Calling IBM i with Ruby
 
 Coming soon...

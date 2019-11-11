@@ -1,6 +1,6 @@
 <div align="center">
-	<h1>The IBMi</h1>
-	<p>A light introduction, history, and overview of the IBMi</p>
+	<h1>IBM i</h1>
+	<p>A light introduction, history, and overview of IBM i</p>
 </div>
 
 <br>

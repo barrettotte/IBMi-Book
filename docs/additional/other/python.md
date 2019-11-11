@@ -1,3 +1,3 @@
-# Python on IBMi
+# Python on IBM i
 
 Coming soon...

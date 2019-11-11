@@ -1,4 +1,4 @@
-# History of the IBMi
+# History of IBM i
 
 
 This section will be an attempt to lightly describe the history of this machine without boring the reader too much.
@@ -14,7 +14,7 @@ This section will be an attempt to lightly describe the history of this machine 
 </figure>
 
 
-## IBMi Ancestry
+## IBM i Ancestry
 
 **History of Punched-Card IBM Machines**:
 * 1880 **Hollerith Census Tabulator** → Only capable of counting
@@ -27,9 +27,6 @@ This section will be an attempt to lightly describe the history of this machine 
 * 2000 iSeries (renamed from AS/400)
 * 2006 System i (renamed from iSeries)
 * 2008 IBM Power Systems generation replaces IBM System i
-
-The naming of the IBMi gets a little confusing when you google things. You'll see IBMi, AS/400, iSeries, IBM System i, etc.
-**All that said, I will refer to the box as the IBMi from here onwards.**
 
 
 ## RPG's Evolution
@@ -49,7 +46,7 @@ The naming of the IBMi gets a little confusing when you google things. You'll se
 **Report Program Generator** (RPG) was developed to replicate punching 80-column cards on the IBM 1400 series as 
 a programming language used for generating reports. Understandably the language is columnar and looks pretty gross as a result.
 
-As time went on and the IBMi (AS/400) evolved, the language evolved with it. It gained various features and improvements along with
+As time went on and IBM i evolved, the language evolved with it. It gained various features and improvements along with
 the system it ran on. The current version of RPG (RPGIV) allows for "free-format" code, breaking its ties to its columnar ancestors.
 Modern RPGIV can be considered a general purpose programming language, although I'd be careful who you said that to.
 
@@ -87,8 +84,8 @@ As you can see, free-format RPG IV looks pretty readable. I think its worthwhile
 a majority of effort should be put on RPG IV free and mixed-format.
 
 
-By no means is this a complete history. There's much more about the IBMi that I skipped over. 
-I think that this level of knowledge is sufficient to start learning this machine.
+By no means is this a complete history. There's much more about IBM i that I skipped over. 
+I think that this level of knowledge is sufficient to start learning this operating system.
 
 
 ## References / Additional Reading

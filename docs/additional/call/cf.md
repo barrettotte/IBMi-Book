@@ -1,15 +1,15 @@
-# Calling the IBMi with ColdFusion
+# Calling IBM i with ColdFusion
 
-Against my better judgement, I will show how to call the IBMi with Adobe ColdFusion 11.
-This was the language I used when I first communicated with the IBMi, so I figured I'd give it a little respect
+Against my better judgement, I will show how to call IBM i with Adobe ColdFusion 11.
+This was the language I used when I first communicated with IBM i, so I figured I'd give it a little respect
 even though I despise working with it.
 
 **This assumes that you have a ColdFusion environment setup and somewhat know what you're doing with it**.
 
 
 ## Example Program
-To demonstrate communicating with the IBMi, we will be making a very simple CFML page.
-It will connect to the IBMi, run a DB2 SQL statement, and output the results.
+To demonstrate communicating with IBM i, we will be making a very simple CFML page.
+It will connect to IBM i, run a DB2 SQL statement, and output the results.
 
 The SQL execution will return a resultset of source members found in all PFs within a targeted library.
 
@@ -25,7 +25,7 @@ Not because I can't, but because I simply don't want to (I'm not a fan of ColdFu
 
 Download the JT400 jar from http://jt400.sourceforge.net/
 
-To make sure you can use a JDBC connection with the IBMi, make sure you place the JT400 jar in
+To make sure you can use a JDBC connection with IBM i, make sure you place the JT400 jar in
 whatever directory you use for your local ColdFusion server. In my case it was ```ColdFusion11/MyUser/lib/```.
 
 
@@ -42,7 +42,7 @@ If not, well... god speed.
 
 
 ## CFML Page
-So I don't stay in ColdFusion any longer than I have to, I will just be dumping the result of the IBMi call to the screen
+So I don't stay in ColdFusion any longer than I have to, I will just be dumping the result of IBM i call to the screen
 in a simple CFML file ```index.cfm```.
 
 I'm not going to go into too much detail since its fairly basic. 
@@ -53,7 +53,7 @@ The hardest part is going to be setting up the ColdFusion server to work correct
 
 <html>
     <body>
-        <h2>Calling the IBMi with ColdFusion</h2>
+        <h2>Calling IBM i with ColdFusion</h2>
         <hr>
         <cfscript>
             local.sql = "
