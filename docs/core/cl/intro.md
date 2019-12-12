@@ -10,8 +10,7 @@ Pretty much everything run on IBM i is triggered through some kind of CL command
 
 
 ## Before Continuing
-I will pass over a lot of stuff because both you and I are going to get bored of reading/typing
-everything CL has to offer.
+I will pass over a lot of stuff because both you and I are going to get bored of reading/typing everything CL has to offer.
 
 When in doubt google things.
 This is also a pretty good reference to have handy https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rbam6/clpro.htm .

@@ -5,7 +5,7 @@ We will be building the classic Fizzbuzz program to demonstrate CL concepts.
 For fun, the program will also output your current username before running the typical fizzbuzz.
 
 This is definitely super ugly, but it at least introduces you to subroutines, parameters, and conditionals.
-We shouldn't get too fancy with CL until you have some exposure to RPGLE.
+This program is completely useless, but practice is practice.
 
 
 ## Pseudocode

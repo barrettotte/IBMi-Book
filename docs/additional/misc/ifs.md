@@ -11,10 +11,9 @@
 I apologize ahead of time, but I don't know very much about the history of the IFS.
 
 
-In the past, IBM i only used its "ancient" file system to store data.
+In the past, IBM i only used its traditional file system to store data.
 At some point, the **Integrated File System (IFS)** was introduced which provided a UNIX like file system on IBM i.
 This provided a more user friendly approach to viewing and organizing files.
-
 
 
 ## Accessing the IFS within ACS

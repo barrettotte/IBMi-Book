@@ -128,6 +128,7 @@ ENDDO
 Just like in BASIC and assembly, CL has labels and a ```GOTO``` command.
 If you are unfamiliar, a label has no functionality by itself, it just points to a place in code.
 Using ```GOTO MYLABEL``` would move execution to the label MYLABEL.
+**In modern IBM i development, GOTO statements should be avoided!**
 ```php
 PGM
   SNDUSRMSG MSG('Hello')

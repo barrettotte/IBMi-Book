@@ -25,9 +25,9 @@ Its important to stumble around and fall a bunch, its part of the learning proce
 ## Who Are You?
 I'm a software developer who wants to learn everything related to programming.
 **I am by no means an IBM i expert, I'm barely a novice.**
-I was lucky enough to score my first job writing Java/ColdFusion that interfaces with IBM i.
-After awhile, I got tired of the IBM i being a "black box". So, I decided to build some windows and lights.
-With the help of my coworkers, I was given the opportunity and support to learn the basics of IBM i.
+I was lucky enough to score my first job writing Java/ColdFusion/Angular that interfaces with IBM i.
+After about 6 months of messing around in my free time and learning the basics, I was promoted to half web developer and half IBM i. 
+This is a very cool position because you get to help bridge the gap between generations of programming languages and paradigms.
 
 
 ## Special Thanks

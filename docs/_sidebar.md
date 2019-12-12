@@ -31,9 +31,7 @@
     - [Display Files](core/dds/dspf.md)
   - [5. DB2 SQL](core/db2/index.md)
     - [Introduction](core/db2/intro.md)
-  - [6. SQLRPGLE Programming](core/sqlrpgle/index.md)
-    - [Introduction](core/sqlrpgle/intro.md)
-  - [7. Final Project](core/project/index.md)
+  - [6. Final Project](core/project/index.md)
     - [Overview](core/project/overview.md)
 
 - Additional Content
@@ -41,8 +39,9 @@
     - [Aldon and LMi](additional/misc/aldon.md)
     - [Fetch Source Members via FTP](additional/misc/fetch.md)
     - [Integrated File System](additional/misc/ifs.md)
+    - [Development in VS Code](additional/misc/vscode.md)
   - [Other Languages](additional/other/index.md)
-    - [C/C++](additional/other/cpp.md)
+    - [C](additional/other/c.md)
     - [COBOL](additional/other/cobol.md)
     - [Java](additional/other/java.md)
     - [MI](additional/other/mi.md)

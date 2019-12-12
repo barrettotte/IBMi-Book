@@ -50,8 +50,8 @@ and you should see the newly created SPF.
 
 ## PDM Commands
 So far we've used three PDM commands.
-You can probably also start to see the pattern of CL commands, but we'll cover that next chapter.
 * ```WRKLIBPDM``` - Work with libraries using PDM
 * ```WRKOBJPDM``` - Work with objects using PDM
 * ```WRKMBRPDM``` - Work with members using PDM
 
+You can probably also start to see the pattern of CL commands, but we'll cover that next chapter.
