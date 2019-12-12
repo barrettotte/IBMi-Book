@@ -40,6 +40,7 @@
     - [Fetch Source Members via FTP](additional/misc/fetch.md)
     - [Integrated File System](additional/misc/ifs.md)
     - [Development in VS Code](additional/misc/vscode.md)
+    - [Service Programs](additional/misc/srvpgm.md)
   - [Other Languages](additional/other/index.md)
     - [C](additional/other/c.md)
     - [COBOL](additional/other/cobol.md)

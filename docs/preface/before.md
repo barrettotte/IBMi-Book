@@ -6,6 +6,9 @@ The more I learn about the IBM i, the less I feel like I know.
 I'm not a very smart person so **this could very well be the blind leading the blind**. 
 Hopefully, this book has enough information to understand IBM i enough to understand the fundamentals.
 
+I believe it is super valuable to learn traditional IBM i development so that is what I will primarily be covering.
+In additional chapters I will cover the basics of developing in a modern sense.
+
 
 ## This is a WIP
 I expect to keep adding content to this "book" as I learn more.
