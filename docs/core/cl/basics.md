@@ -2,6 +2,8 @@
 
 An overview of syntax and some of the basics in CL.
 
+**IMPORTANT NOTE**: Not all features of modern CL were included in previous versions.
+
 
 ## Casing and Formatting
 As you will see in this section and future sections, casing doesn't really matter.
@@ -118,10 +120,23 @@ ENDDO
 ```
 
 
+For loop
+```php
+/* Do For Loop Example */
+DCL VAR(&idx) TYPE(*INT) VALUE(1)
+
+DOFOR VAR(&idx) FROM(1) TO(10) BY(1)
+  SNDUSRMSG MSG('FOR')
+ENDDO
+```
+
+
 ## Built in functions
+A few built in functions, a full list can be found here https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rbam6/rbam6builtinfunc.htm
 * ```%BINARY(&x)``` or ```%BIN(&x)``` - Convert character to binary integer
 * ```%SUBSTRING(&MyStr 1 2)``` or ```%SST(&MyStr 1 2)``` - Substring from 1 to 2
-* Reference: https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rbam6/rbam6builtinfunc.htm
+* ```%UPPER(&MyStr)``` - Convert string to uppercase, LOWER also exists.
+* ```%TRIM(&MyStr)``` - trim blanks, TRIMR and TRIML also exist.
 
 
 ## Labels and Go To
