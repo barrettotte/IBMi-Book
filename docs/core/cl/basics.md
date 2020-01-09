@@ -50,26 +50,20 @@ To update a variable's value, you use the **CHGVAR** command. ```CHGVAR VAR(&MyS
 ## Operators
 CL has the expected operators you would find in most languages; with the addition of some weird ones.
 
-| Operator      | Category   | Name     | Example                               | Result      |
-| ------------- | ---------- | -------- | ------------------------------------- | ----------- |
-| *             | Arithmetic | Multiply | ```CHGVAR VAR(&MyNum) VALUE(4 * 6)``` | &MyNum = 24 |
-| /             | Arithmetic | Divide   | ```CHGVAR VAR(&MyNum) VALUE(8 / 2)``` | &MyNum = 4  |
-| -             | Arithmetic | Subtract | ```CHGVAR VAR(&MyNum) VALUE(3 - 1)``` | &MyNum = 2  |
-| +             | Arithmetic | Add      | ```CHGVAR VAR(&MyNum) VALUE(2 + 2)``` | &MyNum = 4  |
-| *CAT or \|\|  | Character  | Concat   | ```CHGVAR VAR(&MyStr) VALUE('hello' *CAT 'world')``` | &MyStr = 'helloworld' |
-| *BCAT or \|\> | Character  | Concat Blank | ```CHGVAR VAR(&MyStr) VALUE('hello' \|> 'world')``` | &MyStr = 'hello world' |
-| *TCAT or \|\< | Character  | Concat Truncate | ```CHGVAR VAR(&MyStr) VALUE('   hello' *TCAT 'world')``` | &MyStr = 'hello world' |
-| *EQ or =      | Relational | Equality | | |
-| *GT or >      | Relational | Greater Than | | |
-| *LT or <      | Relational | Less Than | | |
-| *GE or >=     | Relational | Greater Than or Equal | | |
-| *LE or <=     | Relational | Less Than or Equal | | |
-| *NE           | Relational | Not Equal to | | | 
-| *NG           | Relational | Not Greater Than | | |
-| *NL           | Relational | Not Less Than | | |
-| *AND          | Logical    | Logical And | | |
-| *OR           | Logical    | Logical Or  | | |
-| *NOT          | Logical    | Logical Not | | |
+* ```* / - +``` - standard arithmetic operators
+* ```*EQ *GT *LT *GE *LE *NE *NG *NL``` - relational operators 
+* ```= > < >= <=``` - relational operators
+* ```*AND *OR *NOT``` - logical operators
+
+There are three different string concatentation operators. 
+Typically I like to use ```||``` for standard concat and ```*BCAT *TCAT``` for the others.
+Its easier for me to remember that way, but do whatever works. 
+
+| Operator | Alternative | Name    | Example     | Result     |
+| -------- | ----- | --------------- | -------------------------------------------------------- | ---------------------- |
+| *CAT     | \|\|  | Concat          | ```CHGVAR VAR(&MyStr) VALUE('hello' *CAT 'world')```     | &MyStr = 'helloworld'  |
+| *BCAT    | \|\>  | Concat Blank    | ```CHGVAR VAR(&MyStr) VALUE('hello' \|> 'world')```      | &MyStr = 'hello world' |
+| *TCAT    | \|\<  | Concat Truncate | ```CHGVAR VAR(&MyStr) VALUE('   hello' *TCAT 'world')``` | &MyStr = 'hello world' |
 
 <br>
 
