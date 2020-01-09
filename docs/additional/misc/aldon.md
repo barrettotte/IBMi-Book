@@ -84,3 +84,63 @@ Here you can see each time an object was checked out or promoted.
 
 <br>
 
+
+## Retiring an SQL Function Object
+To preface, I just added this section for my own personal notes, may not be useful to anyone.
+
+I made this pretty cool SQL function, but I eventually needed to use some dynamic SQL and error handling.
+So I had to retire my SQL function and replace it with a procedure. It should be super easy like always; just take an option **25**, right?
+
+<figure align="center">
+	<img src="./additional/misc/_assets/aldon-retire-sqlfunc4.PNG" alt="aldon" />
+</figure>
+
+Oh.
+
+I guess not.
+
+Regular objects are a lot easier to retire, but retiring an SQL function is pretty ugly for some reason.
+I can't take credit for figuring this out, my coworker Dawn was the one who sat on the phone
+with Rocket and documented the whole process.
+
+
+First, create a new release object with **F6** from within the ```Work with Objects by Release``` menu with the same attributes as the object that should be retired.
+However, in the **Release**, **Application**, and **Group** fields needs to be set to ```ZZLMIBLOCK```. 
+All I know is that this is some LMi black magic and it makes everything work behind the scenes.
+
+<figure align="center">
+	<img src="./additional/misc/_assets/aldon-retire-sqlfunc.PNG" alt="aldon" />
+</figure>
+
+<figure align="center">
+	<img src="./additional/misc/_assets/aldon-retire-sqlfunc2.PNG" alt="aldon" />
+</figure>
+
+<br>
+
+After creating the **blocking object**, it needs to be promoted to the ZZMLIBLOCK release's production environment.
+From Aldon's main menu, press **F22** to edit user default's. Change **Release**, **Application**, and **Group**
+fields to ```ZZLMIBLOCK``` (be sure to write them down if you won't remember them).
+
+<figure align="center">
+	<img src="./additional/misc/_assets/aldon-retire-sqlfunc5.PNG" alt="aldon" />
+</figure>
+
+<br>
+
+Next, take an option **1** ```Work with Objects by Release``` and find the blocking object that was created.
+Promote it to production environment with option **7** and it should be good to go.
+Finally, press **F22** and restore your previous **Release**, **Application**, and **Group** values.
+
+Now its finally time to retire the object. At Aldon's main menu, take an option **1** ```Work with Objects by Release```
+and locate the object to be retired. Take an option **25** on it and the previously created blocking object can now be used.
+
+<figure align="center">
+	<img src="./additional/misc/_assets/aldon-retire-sqlfunc3.PNG" alt="aldon" />
+</figure>
+
+<br>
+
+Now the SQL function can be successfully retired. 
+To double check it was successful, enter the command ```WRKOBJ *ALL/SOMEOBJECT``` and verify the results.
+
