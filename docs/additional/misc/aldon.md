@@ -33,7 +33,7 @@ To begin, launch **LMi** using the command ```STRLMI```
 
 <br>
 
-Begin the checkout process by taking an option **1** for ```Work with objects by release```.
+Begin the checkout process by taking an option **1** for **Work with objects by release**.
 
 Optionally, you can quickly search for an object by typing into the ```Position to``` field at the top of the screen.
 
@@ -51,7 +51,7 @@ Take an option **3** on your target object to checkout to your local environment
 If needed, enter a task number. 
 In my shop's case someone made a utility in JIRA to create JIRA tickets in LMi (sorry can't share it).
 
-**F3** back to the Aldon main menu and take an option **2** for ```Work with objects by developer```.
+**F3** back to the Aldon main menu and take an option **2** for **Work with objects by developer**.
 
 Now this object can be edited, compiled, etc. in this local environment (**DEV**) separate from everything.
 
@@ -71,10 +71,21 @@ From what I've heard **deploying a view in Aldon is very janky**.
 I found this out the hard way and had to get a lot of help.
 
 
+## Dealing with Failed Creations
+
+There's probably multiple ways to do this, but I'm going to write the way I do it.
+After a failed creation, I enter the command ```wrksbmjob``` to find my latest job
+with the name **ACMSCREATE**.
+
+Take an option **8** for **Work with Spooled Files**
+
+Now any of the spooled files can be viewed with option **5**.
+
+
 ## View Object Log
 
 Additionally, you can view the log of an object by taking an option **7** while 
-inside of the ```Work with objects by release``` menu.
+inside of the **Work with objects by release** menu.
 
 Here you can see each time an object was checked out or promoted.
 
@@ -104,7 +115,7 @@ I can't take credit for figuring this out, my coworker Dawn was the one who sat 
 with Rocket and documented the whole process.
 
 
-First, create a new release object with **F6** from within the ```Work with Objects by Release``` menu with the same attributes as the object that should be retired.
+First, create a new release object with **F6** from within the **Work with Objects by Release** menu with the same attributes as the object that should be retired.
 However, in the **Release**, **Application**, and **Group** fields needs to be set to ```ZZLMIBLOCK```. 
 All I know is that this is some LMi black magic and it makes everything work behind the scenes.
 
@@ -128,11 +139,11 @@ fields to ```ZZLMIBLOCK``` (be sure to write them down if you won't remember the
 
 <br>
 
-Next, take an option **1** ```Work with Objects by Release``` and find the blocking object that was created.
+Next, take an option **1** **Work with Objects by Release** and find the blocking object that was created.
 Promote it to production environment with option **7** and it should be good to go.
 Finally, press **F22** and restore your previous **Release**, **Application**, and **Group** values.
 
-Now its finally time to retire the object. At Aldon's main menu, take an option **1** ```Work with Objects by Release```
+Now its finally time to retire the object. At Aldon's main menu, take an option **1** **Work with Objects by Release**
 and locate the object to be retired. Take an option **25** on it and the previously created blocking object can now be used.
 
 <figure align="center">
