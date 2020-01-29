@@ -24,9 +24,10 @@ Input commands in the **Control** field at the top of the screen.
 | W+n     | Move screen right n times             |
 | W-n     | Move screen left n times              |
 
-
-TODO: Picture of control
-
+<br>
+<figure align="center">
+	<img src="./core/ibmi/_assets/splf-01.PNG" alt="control field" />
+</figure>
 
 
 
