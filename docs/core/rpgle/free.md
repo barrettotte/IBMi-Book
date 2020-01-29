@@ -1,3 +1,3 @@
-# Introduction to RPG Free
+# Introduction to RPGLE Free
 
 Coming soon...

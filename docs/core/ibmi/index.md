@@ -3,7 +3,6 @@
 	<p>A light introduction, history, and overview of IBM i</p>
 </div>
 
-<br>
 <figure align="center">
-	<img src="./core/ibmi/_assets/ibmi-01.jpg" alt="My AS400" />
+	<img src="./core/ibmi/_assets/ibmi-01.jpg" alt="My AS400" width="60%" height="60%"/>
 </figure>

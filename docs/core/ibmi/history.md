@@ -43,15 +43,16 @@ This section will be an attempt to lightly describe the history of this machine 
 
 <br><br>
 
-**Report Program Generator** (RPG) was developed to replicate punching 80-column cards on the IBM 1400 series as 
-a programming language used for generating reports. Understandably the language is columnar and looks pretty gross as a result.
+**Report Program Generator** (RPG) was developed as a programming language used for generating reports.
+RPG was first written on 80-column punchcards.
+Understandably the language is columnar and looks relatively gross as a result.
 
 As time went on and IBM i evolved, the language evolved with it. It gained various features and improvements along with
-the system it ran on. The current version of RPG (RPGIV) allows for "free-format" code, breaking its ties to its columnar ancestors.
-Modern RPGIV can be considered a general purpose programming language, although I'd be careful who you said that to.
+the system it ran on. The current version of RPG (RPG IV) allows for "free-format" code, breaking its ties to its columnar ancestors. 
+I go into a bit more detail on RPG history in a later [section](https://barrettotte.github.io/IBMi-Book/#/core/rpgle/intro).
 
-In this book, I will briefly go over fixed-format RPG. But, the main focus will be on either completely free-format
-or mixed format.
+In this book, I will briefly go over fixed-format RPG. But, the main focus will be on either mostly free-format
+with a bit of mixed format.
 
 #### Hello World in fixed-format RPG III
 ```php

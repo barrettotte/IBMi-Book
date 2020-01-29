@@ -24,9 +24,10 @@
     - [Small CL Project](core/cl/project.md)
     - [Introduction to Commands](core/cl/cmd.md)
   - [3. RPGLE Programming](core/rpgle/index.md)
-    - [Introduction to RPG Fixed](core/rpgle/fixed.md)
-    - [Introduction to RPG Free](core/rpgle/free.md)
-    - [Fixed vs Free](core/rpgle/compare.md)
+    - [Introduction](core/rpgle/intro.md)
+    - [RPGLE Format Specifications](core/rpgle/specs.md)
+    - [RPGLE Fixed Format](core/rpgle/fixed.md)
+    - [RPGLE Free Format](core/rpgle/free.md)
     - [Example Programs](core/rpgle/programs.md)
   - [4. DDS Files](core/dds/index.md)
     - [Introduction](core/dds/intro.md)
@@ -46,6 +47,7 @@
 
 - Additional Content
   - [Miscellaneous](additional/misc/index.md)
+    - [RPG/400 (RPG III)](additional/misc/rpg400.md)
     - [Aldon and LMi](additional/misc/aldon.md)
     - [Fun with DSPFFD](additional/misc/dspffd.md)
     - [Fetch Source Members via FTP](additional/misc/fetch.md)
