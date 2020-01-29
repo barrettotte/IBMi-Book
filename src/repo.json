@@ -8,7 +8,10 @@
             "extension": "CLP",
             "members": [
                 "CLFIZZBUZZ",
-                "ECHO"
+                "ECHO",
+                "FIRSTCL",
+                "HELLOCL",
+                "JOBINFO"
             ]
         },
         {

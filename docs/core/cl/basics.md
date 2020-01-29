@@ -195,7 +195,7 @@ ENDPGM
 
 
 ## Parameters
-A CL program can also accept parameters in its invocation using the ```PARM``` command.
+A CL program can also accept parameters in its invocation using ```PARM```.
 A parameter coming in must be declared in the CL program in order to be used.
 
 ```php
