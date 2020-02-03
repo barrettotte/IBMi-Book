@@ -22,6 +22,8 @@ More information on these commands can be found here:
   * RTVNETA - https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/cl/rtvneta.htm
 
 ```php
+/* JOBINFO.CLLE */
+
 PGM                                                     
   DCL VAR(&username) TYPE(*CHAR) LEN(10)                 
   DCL VAR(&jobname)  TYPE(*CHAR) LEN(10)                 
@@ -44,3 +46,56 @@ PGM
                                                     
 ENDPGM
 ```
+
+
+## Calling a System API
+To call a system API, you just have to match the parms and call it like a normal program.
+This example uses the QUILNGTX (Long Text) API to show a simple popup message.
+
+
+```php
+/* CLPOPUP.CLLE */
+
+PGM
+  /*         QUILNGTX Prototype           */
+  DCL VAR(&message)  TYPE(*CHAR) LEN(6800)
+  DCL VAR(&length)   TYPE(*INT)  LEN(4)
+  DCL VAR(&msgId)    TYPE(*CHAR) LEN(7)    VALUE('Test')
+  DCL VAR(&qualmsgf) TYPE(*CHAR) LEN(20)   VALUE('Popup Message')
+  DCL VAR(&nullErr)   TYPE(*PTR)  ADDRESS(*NULL)
+
+  CHGVAR VAR(&message) +
+    VALUE('This is a popup message using the QUILNGTX' +
+      *BCAT 'API, its pretty neat.')
+
+  CHGVAR VAR(&length) VALUE(%len(&message))
+
+  CALL PGM(QSYS/QUILNGTX) PARM(&message &length &msgId +
+                               &qualmsgf &nullErr)
+
+ENDPGM
+```
+
+
+## Calling a SQL Stored Procedure
+This was by far the coolest thing I learned in awhile.
+A stored procedure on IBMi can be treated like a callable program.
+
+Once again, you match the parms and your good to go.
+You can also still fully use out parms as well.
+
+```php
+/* SQLPROC.CLLE */
+
+PGM
+  DCL VAR(&parm1)    TYPE(*INT)  LEN(4)
+  DCL VAR(&outparm1) TYPE(*CHAR) LEN(64)
+
+  /* Just match the parms of the stored proc */
+  CALL PGM(SOMESTOREDPROC) PARM(&parm1 &outparm1)
+
+  SNDUSRMSG MSG(&outparm1)
+
+ENDPGM
+```
+

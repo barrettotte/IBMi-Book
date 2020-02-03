@@ -1,0 +1,10 @@
+PGM
+  DCL VAR(&parm1)    TYPE(*INT)  LEN(4)
+  DCL VAR(&outparm1) TYPE(*CHAR) LEN(64)
+
+  /* Just match the parms of the stored proc */
+  CALL PGM(SOMESTOREDPROC) PARM(&parm1 &outparm1)
+
+  SNDUSRMSG MSG(&outparm1)
+
+ENDPGM

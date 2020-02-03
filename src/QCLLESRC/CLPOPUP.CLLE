@@ -1,0 +1,19 @@
+PGM
+
+  /*         QUILNGTX Prototype           */
+  DCL VAR(&message)  TYPE(*CHAR) LEN(6800)
+  DCL VAR(&length)   TYPE(*INT)  LEN(4)
+  DCL VAR(&msgId)    TYPE(*CHAR) LEN(7)    VALUE('Test')
+  DCL VAR(&qualmsgf) TYPE(*CHAR) LEN(20)   VALUE('Popup Message')
+  DCL VAR(&nullErr)   TYPE(*PTR)  ADDRESS(*NULL)
+
+  CHGVAR VAR(&message) +
+    VALUE('This is a popup message using the QUILNGTX' +
+      *BCAT 'API, its pretty neat.')
+
+  CHGVAR VAR(&length) VALUE(%len(&message))
+
+  CALL PGM(QSYS/QUILNGTX) PARM(&message &length &msgId +
+                               &qualmsgf &nullErr)
+
+ENDPGM
