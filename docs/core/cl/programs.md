@@ -130,6 +130,9 @@ I showed in the above example that you can call CL from bash, so let me show a c
 IBMi also has another flavor of shell, QShell. It pretty much works as expected of a shell.
 More on QShell can be read at https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzahz/rzahzpdf.pdf
 
+With this new knowledge, you can create some really powerful utilities. For example, I created a "generic" build script
+using bash and QShell at https://gist.github.com/barrettotte/278e1e97fc2ba23c7ad6366b0b4c8668
+
 Personally, I find it easier to use the ```system``` command and build a CL string to pass for execution.
 I also didn't feel like learning another shell when bash is fine in 90% of my use cases.
 But, by all means do whatever works.
