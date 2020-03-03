@@ -37,7 +37,7 @@ PGM
 
   RTVNETA SYSNAME(&sysname)                              
                                                         
-  SNDUSRMSG MSG(&jobnum   *TCAT '/' +                    
+  SNDUSRMSG MSG(&jobnum  *TCAT '/' +                    
             || &username *TCAT '/' +                    
             || &jobname)       
                                
@@ -78,11 +78,8 @@ ENDPGM
 
 
 ## Calling a SQL Stored Procedure
-This was by far the coolest thing I learned in awhile.
-A stored procedure on IBMi can be treated like a callable program.
-
-Once again, you match the parms and your good to go.
-You can also still fully use out parms as well.
+This was by far the coolest thing I learned in awhile. A stored procedure on IBMi can be treated like a callable program.
+Once again, you match the parms and your good to go. You can also still fully use output parms as well.
 
 ```php
 /* SQLPROC.CLLE */
@@ -97,5 +94,57 @@ PGM
   SNDUSRMSG MSG(&outparm1)
 
 ENDPGM
+```
+
+
+## Using Bash in CL
+IBMi comes with multiple shells installed. Sometimes its easier to take an existing shell script
+and call it using CL. If you don't know any Bash, I highly recommend learning it and adding it to your toolbox.
+
+Here I give a few examples of fun things you can do. Since you have access to bash, the possibilities are endless.
+
+```php
+/* BASHTEST.CLLE */
+
+PGM
+  
+  /* Running a basic command */
+  QSH CMD('echo "hello world"')
+
+  /* Executing a shell script */
+  QSH CMD('./some_script.sh')
+
+  /* Finding files in IFS directory by type */
+  QSH CMD('find /home/otteb/ -name "*.PDF" -type f')
+
+  /* Executing CL from bash, just because you can! */
+  QSH CMD('system "DSPLIBL"')
+
+ENDPGM
+```
+
+
+## Calling CL and QShell from Bash
+I showed in the above example that you can call CL from bash, so let me show a clearer example.
+
+IBMi also has another flavor of shell, QShell. It pretty much works as expected of a shell.
+More on QShell can be read at https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzahz/rzahzpdf.pdf
+
+Personally, I find it easier to use the ```system``` command and build a CL string to pass for execution.
+I also didn't feel like learning another shell when bash is fine in 90% of my use cases.
+But, by all means do whatever works.
+
+
+```shell
+#!/QOpenSys/pkgs/bin/bash
+
+# /home/otteb/test.sh
+
+# Display library list using CL
+system "DSPLIBL"
+
+# Display library list using QSH
+qsh -c "liblist"
+
 ```
 

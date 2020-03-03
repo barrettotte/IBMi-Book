@@ -1,0 +1,15 @@
+PGM
+
+ /* Running a basic command */
+ QSH CMD('echo "hello world"')
+
+ /* Executing a shell script */
+ /*QSH CMD('./some_script.sh')*/
+
+ /* Finding files in IFS directory by type */
+ QSH CMD('find /home/otteb/ -name "*.PDF" -type f')
+
+ /* Executing CL from bash */
+ QSH CMD('system "DSPLIBL"')
+
+ENDPGM
