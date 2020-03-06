@@ -181,3 +181,37 @@ PGM
                                
 ENDPGM
 ```
+
+
+## Java HTTP GET Request
+For what its worth, you can use java HTTP GET requests straight from CL.
+While I don't think there's a straight forward way to get an actual response back, 
+this can be used to trigger web jobs from IBMi super easily.
+
+This example just shows hitting an API and pausing the Java shell display so you can see the program completed.
+This isn't a super good example, but it serves it's purpose on what I was trying to show.
+
+```php
+/* JAVAHTTP.CLLE */
+
+PGM PARM(&CRYPT &FIAT)                                       
+  DCL VAR(&CRYPT) TYPE(*CHAR) LEN(3)                         
+  DCL VAR(&FIAT)  TYPE(*CHAR) LEN(3)                         
+  DCL VAR(&URL)   TYPE(*CHAR) LEN(32)                        
+  DCL VAR(&REQ)   TYPE(*CHAR) LEN(256)                       
+                                                             
+  CHGVAR VAR(&URL) VALUE('https://min-api.cryptocompare.com')
+                                                             
+  CHGVAR VAR(&REQ) VALUE(&URL                  +             
+                        |< '/data/price'       +             
+                        |< '?fsym='  || &CRYPT +             
+                        |< '&tsyms=' || &FIAT  )             
+  
+  /* Make sure parms are passed! */
+  MONMSG MSGID(MCH3601) EXEC(RETURN)    
+                                        
+  JAVA CLASS(HTTPRequest)  PARM(&REQ) +
+       CLASSPATH('/web/certificates') +
+       OUTPUT(* *PAUSE)              
+ENDPGM                                  
+```

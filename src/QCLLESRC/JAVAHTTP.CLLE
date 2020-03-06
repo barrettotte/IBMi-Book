@@ -1,0 +1,25 @@
+/* HTTP Example:                                                     */
+/* curl "https://min-api.cryptocompare.com                           */
+/*       /data/price?fsym=BTC&tsyms=JPY"                             */
+
+PGM PARM(&CRYPT &FIAT)
+  DCL VAR(&CRYPT) TYPE(*CHAR) LEN(3)
+  DCL VAR(&FIAT)  TYPE(*CHAR) LEN(3)
+  DCL VAR(&URL)   TYPE(*CHAR) LEN(32)
+  DCL VAR(&REQ)   TYPE(*CHAR) LEN(256)
+
+  CHGVAR VAR(&URL) VALUE('https://min-api.cryptocompare.com')
+
+  CHGVAR VAR(&REQ) VALUE(&URL                  +
+                        |< '/data/price'       +
+                        |< '?fsym='  || &CRYPT +
+                        |< '&tsyms=' || &FIAT  )
+
+  /* Make sure parms are passed! */
+  MONMSG MSGID(MCH3601) EXEC(RETURN)
+
+  JAVA  CLASS(HTTPRequest)  PARM(&REQ) +
+        CLASSPATH('/web/certificates') +
+        OUTPUT(* *PAUSE)
+
+ENDPGM
