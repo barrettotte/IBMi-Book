@@ -54,7 +54,7 @@
     - [Integrated File System](additional/misc/ifs.md)
     - [Development in VS Code](additional/misc/vscode.md)
   - [More RPGLE Fun](additional/morerpg/index.md)
-    - [HTTP and JSON in RPGLE](additional/morerpg/httpjson.md)
+    - [HTTP and JSON in SQLRPGLE](additional/morerpg/httpjson.md)
     - [Service Programs](additional/morerpg/srvpgm.md)
     - [Socket Programming in RPGLE](additional/morerpg/sockets.md)
   - [Other Languages](additional/other/index.md)
@@ -68,10 +68,12 @@
   - [Calling IBM i](additional/call/index.md)
     - [With C#](additional/call/csharp.md)
     - [With ColdFusion](additional/call/cf.md)
+    - [With Go](additional/call/go.md)
     - [With Java](additional/call/java.md)
     - [With Node](additional/call/node.md)
     - [With Python](additional/call/python.md)
     - [With Ruby](additional/call/ruby.md)
+    - [With Rust](additional/call/rust.md)
 
 - Appendix
   - [Book Development](appendix/dev.md)
