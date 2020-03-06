@@ -205,3 +205,19 @@ PGM PARM(&name)
   SNDUSRMSG MSG('Hello' *BCAT &name)
 ENDPGM
 ```
+
+
+## Packed Decimal Parameters
+One of the more screwy things in CL is trying to pass a packed decimal parm to a program.
+```php
+/* Pass 2 */
+CALL PGM(MYPGM) PARM(X'2F')
+
+/* Pass 10, notice the added '0' */
+CALL PGM(MYPGM) PARM(X'010F')
+```
+* The parm including 'F' must be even number of positions
+* If len(parm + 'F') is odd, add a leading zero to parm
+* 'F' = positive, 'D' = negative
+* If a packed decimal size is not specified, it defaults to PACKED(15:5) -> 000000012345000 (123.45)
+
