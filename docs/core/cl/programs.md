@@ -191,6 +191,9 @@ this can be used to trigger web jobs from IBMi super easily.
 This example just shows hitting an API and pausing the Java shell display so you can see the program completed.
 This isn't a super good example, but it serves it's purpose on what I was trying to show.
 
+Also worth noting that Java programs themselves can be invoked from CL.
+Read more at https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/cl/java.htm#JAVA.OUTPUT
+
 ```php
 /* JAVAHTTP.CLLE */
 
