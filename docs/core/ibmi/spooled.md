@@ -1,8 +1,14 @@
 # Spooled Files
 
-Coming soon...
 
-TODO: Description of spooled files and why they're important
+Each time a job is ran it can generate what is known as a spooled file.
+To put it simply, this is just an output file that contains information like job diagnostics, errors, etc.
+
+One of the most valuable times to look at a spooled file is for compile listings.
+When you submit a job to compile a program it generates a handful of spooled files.
+One of the spooled files will be the compile listing where it details warnings, errors, etc.
+This is very useful for trying to figure out why your program won't compile.
+
 TODO: Picture of a spooled file
 TODO: Picture of a spooled file with errors
 

@@ -62,5 +62,6 @@ There are a couple other sets of indicators that I've never messed with:
 ## Specifications
 Each line of an RPG program has a specification assigned to it. This specification dictates both format and meaning of the source statement.
 
-In the next section, I will list out specifications for RPG IV.
+In the a few sections, I will list out the specifications for fixed format RPG IV (RPGLE).
+
 

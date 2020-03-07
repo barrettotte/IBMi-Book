@@ -177,7 +177,7 @@ dcl-c myConst2 5;          // Define directly
 
 ## Defining a Data Structure
 A data structure definition begins with the opcode ```dcl-ds``` and ends with ```end-ds```.
-If you are comfortable with structs in C, data structures in RPGLE feel very.
+If you are comfortable with structs in C, data structures in RPGLE feel very familiar.
 
 Each field in a data structure definition is defined like a standalone field,
 except the ```dcl-s``` opcode is not included.
@@ -206,11 +206,29 @@ end-ds;
 // likeds(person) -> Like data structure named person
 dcl-ds friend likeds(person);
 
-// Data structures are very useful for dealing
-// with indicators in display files (more on this later)
+// Data structures are very useful for 
+// dealing with indicators in display files 
+// (more on this later) ->  if dspf.refresh ...
 dcl-ds dspf qualified;
   exit      ind pos(3);
   refresh   ind pos(5);
+end-ds;
+
+// Also useful for just organizing constants
+// such as SQL states ->  if sqlStates.success ...
+dcl-ds sqlStates qualified;
+  success char(2) inz('00');
+  warning char(2) inz('01');
+  noData  char(2) inz('02');
+end-ds;
+
+// Lastly, there are special data structures
+// that can be accessed for various data.
+// For example, this data structure has access
+// to a ton of program information (PSDS).
+
+dcl-ds pgmDs PSDS qualified;
+  procName *proc; // Name of program
 end-ds;
 ```
 
