@@ -58,7 +58,7 @@ Sometimes there aren't enough resources to start the job, so it must wait for th
 
 
 ## Subsystems
-A subsystem is a segmented enivironment with its own resource pool and workflow.
+A subsystem is a segmented environment with its own resource pool and workflow.
 All jobs are run within a specified subsystem.
 There are more subsystems than these, but here are some basics:
 * QBATCH - Subsystem for batch jobs
@@ -73,6 +73,9 @@ So, I will not be covering anything about it in this book.
 * **Physical File** - A file to contain data with a predefined format.
 * **Source Physical File** - A physical file for containing source members. 
 * **Logical File** - A file that does not occupy any memory. 
+
+The idea of a physical versus a logical file will start to make more sense
+when DB2 SQL is introduced. (spoiler: table vs view)
 
 
 Obviously more information will be learned as you go through this book,

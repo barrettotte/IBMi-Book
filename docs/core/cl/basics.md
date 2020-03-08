@@ -68,13 +68,8 @@ Its easier for me to remember that way, but do whatever works.
 <br>
 
 
-**Additional Notes:**
-* ```*BCAT``` concatenates strings with a blank space between
-* ```*TCAT``` concatenates strings and trims blanks of the first string
 
-
-
-## Control Structure
+## Control Structures
 
 If statements are also commands that have their own parameters (**COND** and **THEN**).
 
@@ -126,17 +121,19 @@ ENDDO
 
 
 ## Built in functions
-A few built in functions, a full list can be found here https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rbam6/rbam6builtinfunc.htm
+A few built in functions:
 * ```%BINARY(&x)``` or ```%BIN(&x)``` - Convert character to binary integer
 * ```%SUBSTRING(&MyStr 1 2)``` or ```%SST(&MyStr 1 2)``` - Substring from 1 to 2
 * ```%UPPER(&MyStr)``` - Convert string to uppercase, LOWER also exists.
 * ```%TRIM(&MyStr)``` - trim blanks, TRIMR and TRIML also exist.
 
+A full list can be found at https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_71/rbam6/rbam6builtinfunc.htm
+
 
 ## Labels and Go To
 Just like in BASIC and assembly, CL has labels and a ```GOTO``` command.
 If you are unfamiliar, a label has no functionality by itself, it just points to a place in code.
-Using ```GOTO MYLABEL``` would move execution to the label MYLABEL.
+Using ```GOTO MYLABEL``` would move execution (program counter) to the label MYLABEL (memory address).
 **In modern IBM i development, GOTO statements should be avoided!**
 ```php
 PGM
@@ -168,10 +165,10 @@ ENDPGM
 
 ## Message Monitoring
 Another thing I don't have experience with is ```MONMSG```.
-But, this is essentially the CL equivalent of a Try/Catch.
+But, this is essentially the CL equivalent of a try/catch block.
 
 When a program fails at runtime, the error ID is given.
-This is essentially a catch for an error with the ID of MCH3601.
+This is pretty much the equivalent of a try/catch for an error with the ID of MCH3601 (parm undefined).
 
 ```php
 /* Pretend a line that could generate MCH3601 error is here instead */
@@ -194,7 +191,7 @@ ENDPGM
 ```
 
 
-## Parameters
+## Parameters (parms)
 A CL program can also accept parameters in its invocation using ```PARM```.
 A parameter coming in must be declared in the CL program in order to be used.
 
