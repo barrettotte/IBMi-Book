@@ -1,7 +1,7 @@
 # Introduction to RPGLE Free
 
 There might be a lot of bells and whistles specific to IBMi, but RPGLE is just another general purpose programming language.
-If you can learn Java, C or C#, you can learn RPGLE.
+If you can learn Java, C or C#, you can learn RPGLE. If you already know C, you'll probably notice a lot of similarities.
 
 In my opinion, I think its easier for a newer developer to learn mainly free format with a bit of fixed format for legacy code and general understanding.
 New code should be written in fully free form if possible. 
@@ -152,6 +152,8 @@ More information on definition statement keywords can be read at https://www.ibm
 ## Defining a Standalone Field
 The definition opcode ```dcl-s``` is for defining a standalone field (variable).
 
+Side note: String literals in RPGLE use single quotes instead of double quotes.
+
 ```php
 // Simple examples of variable declaration:
 
@@ -234,3 +236,40 @@ end-ds;
 
 This is a very high level overview of data structures,
 more can be read about them here https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzasd/freedatastructure.htm
+
+
+## Arrays and Data Structure Arrays
+Declaring an array is the same as declaring a standalone field (with ```dcl-s```), but to make it an array you include the keyword ```dim```.
+I will only be covering the regular fixed sized arrays (runtime arrays).
+
+In IBMi 7.4, there will be variable sized arrays similar to Lists in Java. 
+But, I will not be covering this since I don't have a box running it (I'm on 7.3).
+
+There are also compile time arrays, which I have never used personally and will not be covering.
+
+**Important Note** - Arrays in RPGLE are **one-indexed** (indexing starts at one and not zero).
+Additionally, indexing an array uses parentheses instead of square braces.
+
+Data structure arrays are defined in a similar fashion as regular arrays, just include the ```dim``` keyword on the definition.
+
+```php
+dcl-s myArray char(16) dim(40);    // Define a char array with 40 elements
+
+dcl-ds myDs qualified;
+  myArray int(3) dim(10);          // Arrays can also be defined in data structures
+end-ds;
+
+dcl-ds myDsArr dim(25) qualified;  // Data structure arrays are declared in a similar way
+  field1 char(99);
+  field2 int(5);
+  field3 ind;
+  field4 int(3) dim(10);           // Array in a data structure array
+end-ds;
+
+myArray(1) = 'Hello World';        // To reiterate, arrays are one-indexed
+myDs.myArray(3) = 'Woah';          // Parentheses instead of square braces
+
+myDsArr(10).field1 = 'Awesome';    // Data structure arrays are accessed as expected
+myDsArr(10).field4(5) = 1234;
+```
+
