@@ -141,6 +141,19 @@ Before learning how to declare a variable, the simple data types should be defin
   * int(20) = 8 byte(s)
 
 
+## Indicators
+An indicator is used just like a boolean, they can be set to 1, 0, *ON, *OFF.
+There are various dedicated indicators in RPG, but there's really only one that I care to remember.
+In RPGLE, the **last record indicator** needs to be set to *ON in your main function.
+
+Truthfully, I don't think this is entirely necessary anymore with fully free RPG.
+But, I've had a couple instances of using display files (more on this later) where I needed to use it to get things working properly.
+For sanity's sake, I just include it; its one line of code extra.
+```php
+*INLR = *ON;
+```
+
+
 ## Definition Statements
 Definitions begin with opcode ```dcl-?``` and if needed end with ```end-?```.
 More details on definition statements can be read at https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzasd/freedatadef.htm
@@ -270,6 +283,8 @@ myArray(1) = 'Hello World';        // To reiterate, arrays are one-indexed
 myDs.myArray(3) = 'Woah';          // Parentheses instead of square braces
 
 myDsArr(10).field1 = 'Awesome';    // Data structure arrays are accessed as expected
+myDsArr(10).field2 = 100;
+myDsArr(10).field3 = *ON;
 myDsArr(10).field4(5) = 1234;
 ```
 
