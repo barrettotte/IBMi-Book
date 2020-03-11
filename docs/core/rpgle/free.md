@@ -354,6 +354,10 @@ dcl-s num int(10) inz(0);
 
 // Do while
 dow num < 10;
+  if (num = 5);
+    iter;  // skip 5th iteration
+  endif;
+
   dsply (%char(num));
   num += 1;
 enddo;
@@ -365,6 +369,7 @@ dou num < 10;
   if (num = 5);
     leave;  // leave a loop early
   endif;
+
   dsply (%char(num));
   num += 1;
 enddo;
