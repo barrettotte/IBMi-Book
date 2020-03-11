@@ -288,3 +288,99 @@ myDsArr(10).field3 = *ON;
 myDsArr(10).field4(5) = 1234;
 ```
 
+
+## Operators
+Operators in RPGLE are slightly different than languages like Java or C.
+
+| Name                  | Operator | Type          | Example                   |
+| --------------------- | -------- | ------------- | ------------------------- |
+| Addition              | +        | Arithmetic    | ```x = 1 + 1;``` -> 2     |
+| Subtraction           | -        | Arithmetic    | ```x = 1 - 1;``` -> 0     |
+| Multiplication        | *        | Arithmetic    | ```x = 1 * 1;``` -> 1     |
+| Division              | /        | Arithmetic    | ```x = 1 / 1;``` -> 1     |
+| Exponentation         | -        | Arithmetic    | ```x = 2 ** 4;``` -> 16   |
+| Equality              | =        | Relational    | ```1 = 1``` -> true       |
+| Inequality            | <>       | Relational    | ```1 <> 1``` -> false     |
+| Greater Than          | >        | Relational    | ```1 > 2``` -> false      |
+| Greater Than or Equal | >=       | Relational    | ```1 >= 1``` -> true      |
+| Less Than             | <        | Relational    | ```1 < 5``` -> true       |
+| Less Than or Equal    | <=       | Relational    | ```2 <= 4``` -> true      |
+| Logical And           | AND      | Logical       | ```1=1 and 2=2``` -> true |
+| Logical Or            | OR       | Logical       | ```1=1 or 2=5``` -> true  |
+| Assignment            | =, +=, -=, *=, /=, **=   | Assignment | ```x = 4; x += 2;``` |
+| Unary Plus            | +        | Unary         | ```x = +3```              |
+| Unary Minus           | -        | Unary         | ```x = -x```              |
+| Logical Negation      | NOT      | Unary/Logical | ```x = not x;```          |
+
+As you can see its just slightly different than a normal set of operators that everyone is used to.
+
+
+## Conditional Statements
+RPGLE has the standard conditionals you would expect in a general purpose language.
+
+Blocks of statements in RPGLE all follow a similar pattern of ending with a specfic opcode.
+For example, if blocks end with 'endif' and data structure blocks end with 'end-ds'.
+
+```php
+  if (st = 'A');
+    dsply ('IF');
+  elseif (st = 'B');
+    dsply ('ELSE IF');
+  else;
+    dsply ('ELSE');
+  endif;
+```
+Its worth a small note that the parenthesis are optional on a conditional statement.
+However, I strongly suggest using them just to match other languages' syntax.
+
+RPGLE also has something called a select that works similar to a switch statement.
+```php
+  select;
+    when someValue = 1;
+      dsply ('Case A');
+    when someValue = 2;
+      dsply ('Case B');
+    when someValue = 3;
+      dsply ('Case C');
+    other;
+      dsply ('Default Case');
+  endsl;
+```
+
+## Looping Statements
+For and Do loops are a staple of any language. There are two types of do loops, do while and do until.
+```php
+dcl-s num int(10) inz(0);
+
+// Do while
+dow num < 10;
+  dsply (%char(num));
+  num += 1;
+enddo;
+
+// Do until
+num = 0;
+
+dou num < 10;
+  if (num = 5);
+    leave;  // leave a loop early
+  endif;
+  dsply (%char(num));
+  num += 1;
+enddo;
+```
+
+A for loop has some optional/alternative syntax to control increment size and direction.
+```php
+dcl-s num int(10);
+
+// For loop counting up by 1
+for num = 1 to 3;
+  dsply (%char(num));
+endfor;
+
+// For loop counting down by 1
+for num = 5 downto 1 by 1;
+  dsply (%char(num));
+endfor;
+```

@@ -34,6 +34,8 @@ Big list of references that I've used. I tried my hardest not to forget any.
 * [IBM i 7.3 Documentation](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzahg/welcome.htm)
 * [RPGLE 7.3 Documentation](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzasd/rzasdmain.htm)
 * [IBM i 7.3 ILE RPG Programmer's Guide](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzasc/sc092507.pdf)
+* [IBM i RPGLE Language Reference](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzasd/sc09250802.htm)
+* [IBM i Programming Languages Reference](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzahg/rzahglanguages.htm)
 * [Programming Qshell 7.2](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzahz/rzahzpdf.pdf)
 * [RPG/400 Reference](https://www.ibm.com/support/knowledgecenter/SSAE4W_9.6.0/com.ibm.etools.iseries.langref.doc/evferlsh02.htm#ToC)
 
