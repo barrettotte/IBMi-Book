@@ -19,7 +19,7 @@ After I got a basic understanding of SQLRPGLE, I began to love the language.
 
 
 
-## Free Format Preprocessor Commands
+## Free Format Preprocessor
 To use free format RPGLE, you have to include some preprocessor commands so the compiler knows to compile the correct format.
 
 In older code, you could only do a mix of fixed and free formats using two preprocessor commands.
@@ -53,6 +53,10 @@ To specify only free format, include ```**free``` on the first line of the file.
 
 From this point on I will only be using fully free RPGLE for easier understanding of the language and its quirks. 
 The next page will explain a bit about fixed format in comparison to free format.
+
+
+## Opcodes
+Rather than overfill this page with big tables, I'll just provide a link to the IBM documentation https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzasd/operxcl.htm#operxcl
 
 
 ## Naming
@@ -133,7 +137,7 @@ Before learning how to declare a variable, the simple data types should be defin
 | Timestamp        | 26             | Z                 | ```dcl-s x timestamp;```    |
 
 **Other things of note**:
-* DBCS - Double byte character set
+* DBCS - Double byte character set (other languages such as Chinese and Japanese)
 * Integer declaration - int(digits)
   * int(3) = 1 byte(s)
   * int(5) = 2 byte(s)
@@ -292,25 +296,25 @@ myDsArr(10).field4(5) = 1234;
 ## Operators
 Operators in RPGLE are slightly different than languages like Java or C.
 
-| Name                  | Operator | Type          | Example                   |
-| --------------------- | -------- | ------------- | ------------------------- |
-| Addition              | +        | Arithmetic    | ```x = 1 + 1;``` -> 2     |
-| Subtraction           | -        | Arithmetic    | ```x = 1 - 1;``` -> 0     |
-| Multiplication        | *        | Arithmetic    | ```x = 1 * 1;``` -> 1     |
-| Division              | /        | Arithmetic    | ```x = 1 / 1;``` -> 1     |
-| Exponentation         | -        | Arithmetic    | ```x = 2 ** 4;``` -> 16   |
-| Equality              | =        | Relational    | ```1 = 1``` -> true       |
-| Inequality            | <>       | Relational    | ```1 <> 1``` -> false     |
-| Greater Than          | >        | Relational    | ```1 > 2``` -> false      |
-| Greater Than or Equal | >=       | Relational    | ```1 >= 1``` -> true      |
-| Less Than             | <        | Relational    | ```1 < 5``` -> true       |
-| Less Than or Equal    | <=       | Relational    | ```2 <= 4``` -> true      |
-| Logical And           | AND      | Logical       | ```1=1 and 2=2``` -> true |
-| Logical Or            | OR       | Logical       | ```1=1 or 2=5``` -> true  |
+| Name                  | Operator | Type          | Example                       |
+| --------------------- | -------- | ------------- | ----------------------------- |
+| Addition              | +        | Arithmetic    | ```x = 1 + 1;``` > 2          |
+| Subtraction           | -        | Arithmetic    | ```x = 1 - 1;``` > 0          |
+| Multiplication        | *        | Arithmetic    | ```x = 1 * 1;``` > 1          |
+| Division              | /        | Arithmetic    | ```x = 1 / 1;``` > 1          |
+| Exponentation         | -        | Arithmetic    | ```x = 2 ** 4;``` > 16        |
+| Equality              | =        | Relational    | ```1 = 1``` > true            |
+| Inequality            | <>       | Relational    | ```1 <> 1``` > false          |
+| Greater Than          | >        | Relational    | ```1 > 2``` > false           |
+| Greater Than or Equal | >=       | Relational    | ```1 >= 1``` > true           |
+| Less Than             | <        | Relational    | ```1 < 5``` > true            |
+| Less Than or Equal    | <=       | Relational    | ```2 <= 4``` > true           |
+| Logical And           | AND      | Logical       | ```1=1 and 2=2``` > true      |
+| Logical Or            | OR       | Logical       | ```1=1 or 2=5``` > true       |
 | Assignment            | =, +=, -=, *=, /=, **=   | Assignment | ```x = 4; x += 2;``` |
-| Unary Plus            | +        | Unary         | ```x = +3```              |
-| Unary Minus           | -        | Unary         | ```x = -x```              |
-| Logical Negation      | NOT      | Unary/Logical | ```x = not x;```          |
+| Unary Plus            | +        | Unary         | ```x = +3```                  |
+| Unary Minus           | -        | Unary         | ```x = -x```                  |
+| Logical Negation      | NOT      | Unary/Logical | ```x = not x;```              |
 
 As you can see its just slightly different than a normal set of operators that everyone is used to.
 
@@ -389,3 +393,56 @@ for num = 5 downto 1 by 1;
   dsply (%char(num));
 endfor;
 ```
+
+
+## Built in Functions
+RPGLE also comes with a handful of built in functions that can be pretty convenient.
+Here are a few of them just for reference, much more can be found here https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzasd/bifs.htm
+
+```php
+dcl-s myNum int(5) inz(10);
+
+dcl-s i int(5);
+dcl-s myArr char(10) dim(25);
+
+dcl-s myDate1 date;
+dcl-s myDate2 date;
+dcl-s myTime date;
+
+// dsply accepts characters, convert int to char
+dsply (%char(num)); 
+
+// Get number of elements allocated in array
+for i=1 to %elem(myArr);
+  dsply (arr(i));
+endfor;
+
+// modulus
+myNum = %rem(5:4) // 1
+
+// dates and times
+myDate1 = %date('2020-03-13');
+myDate2 = %date();
+myTime = %time();
+
+```
+
+
+## Monitor
+```monitor``` and ```on-error``` are RPGLE's equivalent of a try/catch.
+A monitor block starts with the opcode ```monitor``` and ends with the opcode ```endmon```.
+Monitor includes the ability to specify 'catches' depending on the error type.
+```php
+monitor;
+  dsply ('Working...');
+on-error *ALL;
+  dsply ('Error occurred!');
+  // You can also specify status code(s) delimited with ':'
+  // *FILE - All file errors
+  // *PROGRAM - All program errors
+  // *ALL - Both *FILE and *PROGRAM errors
+endmon;
+```
+
+
+
