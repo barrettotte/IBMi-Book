@@ -424,7 +424,6 @@ myNum = %rem(5:4) // 1
 myDate1 = %date('2020-03-13');
 myDate2 = %date();
 myTime = %time();
-
 ```
 
 
@@ -446,3 +445,87 @@ endmon;
 
 
 
+## Subprocedures
+Subprocedures are just like functions in C, they have a signature and their own scope.
+They are defined with opcodes ```dcl-proc``` and ```end-proc```.
+
+To define a subprocedure's interface, the opcodes ```dcl-pi``` and ```end-pi``` are used.
+Inside of a subprocedure interface, the procedure name, return type, and the parameters are defined.4
+
+Each parameter has an implied opcode ```dcl-parm``` that the compiler automatically includes.
+The only time it needs to be included is if the parm name is the same as an opcode, such as ```dsply``` or ```select```.
+
+Lastly, to invoke a subprocedure you use the declared name in the subprocedure's interface and pass parameters delimited with ':'.
+Parameters can be of type ```const``` or ```value```. Const parameters cannot be changed in a subprocedure, but value parameters can.
+
+Subprocedures are awesome at segmenting complicated code into more reusable and readable code.
+```php
+dcl-s myNum int(10) inz(*zeros);
+
+doThing();
+myNum = addTwo(1 : 4);     // myNum = 5
+myNum = subTwo(2 : 2);     // myNum = 0
+
+// subprocedure with no parms or return
+// therefore, it won't need an interface
+dcl-proc doThing;
+  dsply ('Did the thing!');
+end-proc;
+
+
+// this subproc returns the sum of two integers as an integer
+dcl-proc addTwo;
+  dcl-pi *N int(10);      // *N -> addTwo
+    num1 int(10) const;   // const ensures num1's value cannot be changed
+    num2 int(10) const;
+  end-pi;
+
+  dcl-s sum int(10) inz(*zeros);  // variables can be defined!
+
+  sum = num1 + num2;
+  
+  return sum;
+end-proc;
+
+
+// this subproc returns the difference of two integers as an integer
+dcl-proc subTwo;
+  dcl-pi subTwo int(10);
+    num1 int(10) const;
+    num2 int(10) const;
+  end-pi;
+
+  return num1 - num2;
+end-proc;
+
+```
+
+
+
+## Subroutines
+Although its generally recommended not to use subroutines in RPGLE anymore, its still good to know about them.
+They are defined with opcodes ```begsr``` and ```endsr```. To invoke a subroutine, the opcode ```exsr``` is used.
+
+Unlike a subprocedure, a subroutine is simply just a block of reusable code.
+A subroutine does not have its own local scope, therefore new fields cannot be defined.
+```php
+// snippet from when I was screwing around trying
+//   to implement the SHA-256 algorithm.
+
+dcl-s hash uns(10) dim(8);
+
+exsr initHash;
+
+// Subroutine to initialize hash value array
+begsr initHash;
+  hash(1) = X'6a09e667';
+  hash(2) = X'bb67ae85';
+  hash(3) = X'3c6ef372';
+  hash(4) = X'a54ff53a';
+  hash(5) = X'510e527f';
+  hash(6) = X'9b05688c';
+  hash(7) = X'1f83d9ab';
+  hash(8) = X'5be0cd19';
+endsr;
+
+```
