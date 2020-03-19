@@ -529,3 +529,60 @@ begsr initHash;
 endsr;
 
 ```
+
+
+## Prototypes
+Prototypes in RPGLE work similar to prototypes in C. They tell the compiler how to call a program or procedure.
+This is useful for calling utility functions or external programs written in CL, RPGLE, C, etc.
+
+```php
+// Declare a prototype to an external program (EXTPGM) named 'SOMEPGM'
+dcl-pr somePgm EXTPGM;
+  num1 int(5) const;
+  num2 int(5) const;
+end-pr;
+
+// Prototype with no parms
+dcl-pr doThing int(2) end-pr;
+
+```
+
+
+## C Prototypes
+This is one of my favorite things I learned. You can call C in RPGLE just by defined a prototype to a C function.
+You just have to match the signature of the function. Scott Klement has an amazing guide on this at https://www.scottklement.com/rpg/callc.html
+
+```php
+
+// Prototype to C's memory copy function
+dcl-pr memcpy extproc('__memcpy');
+  pTarget pointer value;
+  pSource pointer value;
+  nLength uns(10) value;
+end-pr;
+
+// Prototype to C's memory set function
+dcl-pr memset extproc('__memset');
+  pTarget pointer value;
+  nChar   int(10) value;
+  nBufLen uns(10) value;
+end-pr;
+
+
+// using a C function to copy 3 bytes to a buffer
+dcl-s msg uns(3) dim(512);
+dcl-s msgBytes uns(20);
+dcl-s msgBuffer uns(10) dim(16);   // uint32 [16]
+
+msgBytes = 3;
+msg(1) = X'81';
+msg(2) = X'cd';
+msg(3) = X'02';
+
+memcpy(%addr(msgBuffer) : %addr(msg) : msgBytes);
+
+// To be honest, this is an old snippet I had laying around.
+// It could very well be not right, take this with a 
+// grain of salt and just look at the syntax
+
+```
