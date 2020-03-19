@@ -146,9 +146,9 @@ Before learning how to declare a variable, the simple data types should be defin
 
 
 ## Indicators
-An indicator is used just like a boolean, they can be set to 1, 0, *ON, *OFF.
+An indicator is used just like a boolean, they can be set to ```1, 0, *ON, *OFF```.
 There are various dedicated indicators in RPG, but there's really only one that I care to remember.
-In RPGLE, the **last record indicator** needs to be set to *ON in your main function.
+In RPGLE, the **last record indicator** needs to be set to ```*ON``` in your main function.
 
 Truthfully, I don't think this is entirely necessary anymore with fully free RPG.
 But, I've had a couple instances of using display files (more on this later) where I needed to use it to get things working properly.
@@ -296,25 +296,25 @@ myDsArr(10).field4(5) = 1234;
 ## Operators
 Operators in RPGLE are slightly different than languages like Java or C.
 
-| Name                  | Operator | Type          | Example                       |
-| --------------------- | -------- | ------------- | ----------------------------- |
-| Addition              | +        | Arithmetic    | ```x = 1 + 1;``` > 2          |
-| Subtraction           | -        | Arithmetic    | ```x = 1 - 1;``` > 0          |
-| Multiplication        | *        | Arithmetic    | ```x = 1 * 1;``` > 1          |
-| Division              | /        | Arithmetic    | ```x = 1 / 1;``` > 1          |
-| Exponentation         | -        | Arithmetic    | ```x = 2 ** 4;``` > 16        |
-| Equality              | =        | Relational    | ```1 = 1``` > true            |
-| Inequality            | <>       | Relational    | ```1 <> 1``` > false          |
-| Greater Than          | >        | Relational    | ```1 > 2``` > false           |
-| Greater Than or Equal | >=       | Relational    | ```1 >= 1``` > true           |
-| Less Than             | <        | Relational    | ```1 < 5``` > true            |
-| Less Than or Equal    | <=       | Relational    | ```2 <= 4``` > true           |
-| Logical And           | AND      | Logical       | ```1=1 and 2=2``` > true      |
-| Logical Or            | OR       | Logical       | ```1=1 or 2=5``` > true       |
-| Assignment            | =, +=, -=, *=, /=, **=   | Assignment | ```x = 4; x += 2;``` |
-| Unary Plus            | +        | Unary         | ```x = +3```                  |
-| Unary Minus           | -        | Unary         | ```x = -x```                  |
-| Logical Negation      | NOT      | Unary/Logical | ```x = not x;```              |
+| Name                  | Operator       | Type          | Example                       |
+| --------------------- | -------------- | ------------- | ----------------------------- |
+| Addition              | ```+```        | Arithmetic    | ```x = 1 + 1;``` > 2          |
+| Subtraction           | ```-```        | Arithmetic    | ```x = 1 - 1;``` > 0          |
+| Multiplication        | ```*```        | Arithmetic    | ```x = 1 * 1;``` > 1          |
+| Division              | ```/```        | Arithmetic    | ```x = 1 / 1;``` > 1          |
+| Exponentation         | ```-```        | Arithmetic    | ```x = 2 ** 4;``` > 16        |
+| Equality              | ```=```        | Relational    | ```1 = 1``` > true            |
+| Inequality            | ```<>```       | Relational    | ```1 <> 1``` > false          |
+| Greater Than          | ```>```        | Relational    | ```1 > 2``` > false           |
+| Greater Than or Equal | ```>=```       | Relational    | ```1 >= 1``` > true           |
+| Less Than             | ```<```        | Relational    | ```1 < 5``` > true            |
+| Less Than or Equal    | ```<=```       | Relational    | ```2 <= 4``` > true           |
+| Logical And           | ```AND```      | Logical       | ```1=1 and 2=2``` > true      |
+| Logical Or            | ```OR```       | Logical       | ```1=1 or 2=5``` > true       |
+| Assignment            | ```=, +=, -=, *=, /=, **=```   | Assignment | ```x = 4; x += 2;``` |
+| Unary Plus            | ```+```        | Unary         | ```x = +3```                  |
+| Unary Minus           | ```-```        | Unary         | ```x = -x```                  |
+| Logical Negation      | ```NOT```      | Unary/Logical | ```x = not x;```              |
 
 As you can see its just slightly different than a normal set of operators that everyone is used to.
 
@@ -332,6 +332,14 @@ For example, if blocks end with 'endif' and data structure blocks end with 'end-
     dsply ('ELSE IF');
   else;
     dsply ('ELSE');
+  endif;
+
+  // Indicators allow you to be "truthy" with conditionals, 
+  // much like booleans in C.
+  dcl-s a ind inz(*ON);
+
+  if (a);
+    // Do some stuff
   endif;
 ```
 Its worth a small note that the parenthesis are optional on a conditional statement.
