@@ -3,7 +3,6 @@
   - [Before You Read](preface/before.md)
   - [About This Book](preface/about.md)
   - [IBM i Access / Software](preface/access.md)
-
 - Core
   - [1. IBM i](core/ibmi/index.md)
     - [Introduction](core/ibmi/intro.md)
@@ -41,19 +40,17 @@
     - [SQLRPGLE](core/db2/sqlrpgle.md)
     - [HTTP in DB2](core/db2/http.md)
     - [Example Programs](core/db2/programs.md)
-    
   - [6. Final Project](core/project/index.md)
     - [Overview](core/project/overview.md)
-
 - Additional Content
   - [Miscellaneous](additional/misc/index.md)
-    - [RPG/400 (RPG III)](additional/misc/rpg400.md)
     - [Aldon and LMi](additional/misc/aldon.md)
-    - [Fun with DSPFFD](additional/misc/dspffd.md)
-    - [Fetch Source Members via FTP](additional/misc/fetch.md)
-    - [Integrated File System](additional/misc/ifs.md)
     - [Development in VS Code](additional/misc/vscode.md)
-  - [More RPGLE Fun](additional/morerpg/index.md)
+    - [Fetch Source Members via FTP](additional/misc/fetch.md)
+    - [Introduction to DSPFFD](additional/misc/dspffd.md)
+    - [Integrated File System](additional/misc/ifs.md)
+  - [More RPG Fun](additional/morerpg/index.md)
+    - [RPG II, RPG III, and RPG/400](additional/misc/rpg400.md)
     - [HTTP and JSON in SQLRPGLE](additional/morerpg/httpjson.md)
     - [Service Programs](additional/morerpg/srvpgm.md)
     - [Socket Programming in RPGLE](additional/morerpg/sockets.md)
@@ -70,11 +67,11 @@
     - [With ColdFusion](additional/call/cf.md)
     - [With Go](additional/call/go.md)
     - [With Java](additional/call/java.md)
+    - [With Jupyter](additional/call/jupyter.md)
     - [With Node](additional/call/node.md)
     - [With Python](additional/call/python.md)
     - [With Ruby](additional/call/ruby.md)
     - [With Rust](additional/call/rust.md)
-
 - Appendix
   - [Book Development](appendix/dev.md)
   - [References](appendix/references.md)
