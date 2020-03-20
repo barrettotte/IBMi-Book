@@ -10,13 +10,12 @@ New routines or procedures in existing fixed format code should be attempted to 
 Before starting this behemoth of a section, I feel obligated to say that this probably won't do a lot for you.
 I learned the most by screwing around with random programs and looking at references.
 My hope is that this page will be a good cheatsheet to refer to while learning the syntax and some of the fun
-stuff you can do in this language.
+stuff you can do in this language. So, skim through this section and refer back to it later.
 
 If you can hold out a little while longer, you will get acquainted with SQLRPGLE in a future section.
 To summarize, SQLRPGLE is a way to embed DB2 SQL straight into your RPGLE code.
 After I got a basic understanding of SQLRPGLE, I began to love the language. 
 **Just hang in there, it does get fun.**
-
 
 
 ## Free Format Preprocessor
@@ -439,6 +438,9 @@ myTime = %time();
 ```monitor``` and ```on-error``` are RPGLE's equivalent of a try/catch.
 A monitor block starts with the opcode ```monitor``` and ends with the opcode ```endmon```.
 Monitor includes the ability to specify 'catches' depending on the error type.
+
+IBM documentation at https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzasd/sc092508966.htm#zzmonit
+
 ```php
 monitor;
   dsply ('Working...');
@@ -454,19 +456,26 @@ endmon;
 
 
 ## Subprocedures
+A subprocedure is any procedure defined after the main source or linear main procedure (more on this later).
+
 Subprocedures are just like functions in C, they have a signature and their own scope.
 They are defined with opcodes ```dcl-proc``` and ```end-proc```.
 
 To define a subprocedure's interface, the opcodes ```dcl-pi``` and ```end-pi``` are used.
-Inside of a subprocedure interface, the procedure name, return type, and the parameters are defined.4
+Inside of a subprocedure interface, the subprocedure name, return type, and the parameters are defined.4
 
 Each parameter has an implied opcode ```dcl-parm``` that the compiler automatically includes.
 The only time it needs to be included is if the parm name is the same as an opcode, such as ```dsply``` or ```select```.
+
+To return a value from a subprocedure, use the ```return``` opcode. If the subprocedure doesn't return anything, using ```return``` is optional.
 
 Lastly, to invoke a subprocedure you use the declared name in the subprocedure's interface and pass parameters delimited with ':'.
 Parameters can be of type ```const``` or ```value```. Const parameters cannot be changed in a subprocedure, but value parameters can.
 
 Subprocedures are awesome at segmenting complicated code into more reusable and readable code.
+
+IBM documentation at https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_74/rzasd/subpdef.htm
+
 ```php
 dcl-s myNum int(10) inz(*zeros);
 
@@ -481,7 +490,7 @@ dcl-proc doThing;
 end-proc;
 
 
-// this subproc returns the sum of two integers as an integer
+// this subprocedure returns the sum of two integers as an integer
 dcl-proc addTwo;
   dcl-pi *N int(10);      // *N -> addTwo
     num1 int(10) const;   // const ensures num1's value cannot be changed
@@ -496,7 +505,7 @@ dcl-proc addTwo;
 end-proc;
 
 
-// this subproc returns the difference of two integers as an integer
+// this subprocedure returns the difference of two integers as an integer
 dcl-proc subTwo;
   dcl-pi subTwo int(10);
     num1 int(10) const;
@@ -542,6 +551,8 @@ endsr;
 ## Prototypes
 Prototypes in RPGLE work similar to prototypes in C. They tell the compiler how to call a program or procedure.
 This is useful for calling utility functions or external programs written in CL, RPGLE, C, etc.
+
+IBM documentation at https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/freeprototype.htm
 
 ```php
 // Declare a prototype to an external program (EXTPGM) named 'SOMEPGM'
@@ -594,3 +605,58 @@ memcpy(%addr(msgBuffer) : %addr(msg) : msgBytes);
 // grain of salt and just look at the syntax
 
 ```
+
+
+## Linear Main
+As seen in the introduction to RPGLE [section](https://barrettotte.github.io/IBMi-Book/#/core/rpgle/intro), there is the concept of the RPG cycle.
+In newer RPGLE programs it is in your best interest to **not** use the RPG cycle.
+
+Instead a **linear main** is used, much like how C's main function works.
+Using a ```ctl-opt``` (control option), you can tell the RPG compiler to use a program's procedure as it's main procedure.
+The main procedure doesn't have to be named ```main```, but probably should for easy understanding.
+Additionally ```*INLR = *ON``` isn't necessary and very well could just be a ```return``` instead.
+As I've mentioned before, I've had a few odd things pop up from not setting the LR indicator before.
+
+IBM documentation at https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzasd/sc092508384.htm
+
+```php
+ctl-opt main(main); // specify main procedure
+
+dcl-proc main;  
+  dsply ('I am a main procedure');
+  *INLR = *on;  
+end-proc;       
+```
+
+
+
+## On-Exit
+One of the cool and new features RPGLE recently implemented was ```ON-EXIT```.
+This opcode is used for running code whenever a procedure ends no matter what.
+The ```ON-EXIT``` block is ran even if an uncaught error is thrown.
+
+IBM documentation at https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/rzasd/zzonexit.htm
+
+```php
+ctl-opt main(main);
+
+dcl-proc main;
+  dsply ('Hello world');
+  // do some things...
+
+  on-exit;
+    // clean up, close files, etc...
+    dsply ('Exiting...');
+
+end-proc;
+```
+
+
+## Conclusion
+So, this is a brief overview of RPGLE free format. As I said before, don't worry about memorizing or copying this code.
+This section is just a reference that will probably evolve as I learn more every day.
+
+I did not cover file I/O or DB2 SQL here, these topics will get covered in a later section.
+
+The next section will be on RPGLE fixed format. 
+If you immediately want to skip to example programs, that's entirely fine and recommended if you are losing interest.
