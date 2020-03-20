@@ -17,7 +17,7 @@ Understandably the language is columnar and looks relatively gross as a result.
 Since this language was meant to mimic early electromechanical machines, it has quite a few quirks that seem strange to a modern programmer. Over time, the language evolved and added various features.
 
 
-The current iteration of RPG is **RPGLE** or **RPG IV**. I'm not really intending to get into "ILE" concepts too much in this book. But, I thought I should state that RPGLE and RPG IV for my intent are synonymous.
+The current iteration of RPG is **RPGLE** or **RPG IV**. I'm not really intending to get into "ILE" concepts too much in this book. But, I thought I should state that RPGLE and RPG IV for my intent are synonymous. Since mostly every one else calls it RPGLE, I will also call it that.
 
 
 ## RPG Cycle
@@ -62,6 +62,6 @@ There are a couple other sets of indicators that I've never messed with:
 ## Specifications
 Each line of an RPG program has a specification assigned to it. This specification dictates both format and meaning of the source statement.
 
-In the a few sections, I will list out the specifications for fixed format RPG IV (RPGLE).
+In a later section I will list out the specifications for fixed format RPGLE.
 
 

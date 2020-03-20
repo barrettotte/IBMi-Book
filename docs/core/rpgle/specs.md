@@ -10,7 +10,7 @@ Do not waste your time memorizing these specifications, you will see why in a la
 
 All specifications are optional, but must be defined in the order below.
 
-Note: RPGLE does not have E(File Extension) or L(Line Counter) specifications.
+Note: I do not cover older format specifications like E(File Extension) or L(Line Counter) since this is focusing on RPGLE.
 
 
 These tables are from [The Modern RPG IV Language](https://www.amazon.com/Modern-RPG-IV-Language/dp/1583470646/ref=sr_1_3) 
