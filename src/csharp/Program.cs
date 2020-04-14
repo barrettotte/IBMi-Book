@@ -1,37 +1,3 @@
-# Calling IBM i with C# #
-
-For this example, I will be using Dotnet Core.
-
-
-## ODBC
-The **IBM i ODBC driver** must be installed on your system.
-Follow the [windows](https://barrettotte.github.io/IBMi-Book/#/additional/call/windows) or [linux](https://barrettotte.github.io/IBMi-Book/#/additional/call/linux) setup to continue.
-
-I wrote the linux installation steps with C#, if that means anything.
-
-
-## ODBC NuGet
-The package reference ```System.Data.Odbc``` needs to be added to the **.csproj** file.
-
-With **Dotnet Core CLI** you can install with the command ```dotnet add package System.Data.Odbc```.
-
-```xml
- 
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="System.Data.Odbc" Version="4.7.0"/>
-  </ItemGroup>
-</Project>
-```
-
-
-## Example Program
-```cs
-// Program.cs
-
 using System.Data.Odbc;
 
 namespace Example
@@ -78,23 +44,3 @@ namespace Example
         }
     }
 }
-```
-
-<br>
-
-## Result
-Not as "pretty" as the other ones, forgive my laziness :/
-```
-TABLE_SCHEMA,TABLE_NAME,TABLE_PARTITION,SOURCE_TYPE,
-OTTEB1,QDDSSRC,ALDSPF,DSPF,
-OTTEB1,QCLLESRC,CLFIZZBUZZ,CLLE,
-OTTEB1,QCLLESRC,ECHO,CLLE,
-OTTEB1,QCLLESRC,FIRSTCL,CLLE,
-OTTEB1,QCMDSRC,FIZZBUZZ,CMD,
-OTTEB1,QRPGSRC,HELLO,RPG,
-OTTEB1,QCLLESRC,HELLOCL,CLLE,
-OTTEB1,QCLLESRC,JOBINFO,CLLE,
-OTTEB1,QDDSSRC,TODOLIST,,
-OTTEB1,TODOLIST,TODOLIST,,
-OTTEB1,QDDSSRC,TODO00S,,
-```
