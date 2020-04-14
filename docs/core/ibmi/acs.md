@@ -54,6 +54,35 @@ Click **Ok** > **Close** and now the connection can be selected here
 
 <br>
 
+
+
+## Custom Border in Run SQL Scripts
+I would suggest setting this up now if you are going to be working in different IBM i environments.
+I will show you how to easily tell that you are running a SQL statement in a **production** environment using a border.
+
+Go into **Run SQL Scripts** > **View** > **Custom Border Settings**
+
+<figure align="center">
+	<img src="./core/ibmi/_assets/acs-05.PNG" alt="Custom border settings" />
+</figure>
+<br>
+
+I personally like this configuration, but set anything you want in here that makes sense.
+
+<figure align="center">
+	<img src="./core/ibmi/_assets/acs-06.PNG" alt="Custom border settings" />
+</figure>
+<br>
+
+Now you can easily tell what environment you're in just by seeing the scary red border.
+
+<figure align="center">
+	<img src="./core/ibmi/_assets/acs-07.PNG" alt="Run SQL Scripts with Border" />
+</figure>
+<br>
+
+
+
 As the book goes on, I'll touch on a bit more of ACS roughly in the following sections:
 
 * **5250 Emulator** - This chapter
