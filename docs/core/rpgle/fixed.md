@@ -44,7 +44,7 @@ If you for some reason really need to write fixed format, remember to use prompt
 By scrolling to a line and hitting **F4**, it brings up a prompt based on the format specification (Prompt type . . .   C).
 
 <figure align="center">
-	<img src="./core/rpgle/_assets/rpgle01.png" alt="RPGLE prompting" />
+	<img src="./core/rpgle/_assets/rpgle01.PNG" alt="RPGLE prompting" />
     <figcaption align="center">
 		Prompting an RPGLE C spec
 	</figcaption>
@@ -56,7 +56,7 @@ Inside of this prompt, you can do additional prompting on each field with **F1**
 For example, hitting **F1** on the **Operation** field displays a list of opcodes I can put in.
 
 <figure align="center">
-	<img src="./core/rpgle/_assets/rpgle02.png" alt="RPGLE prompting" />
+	<img src="./core/rpgle/_assets/rpgle02.PNG" alt="RPGLE prompting" />
     <figcaption align="center">
 		Operation and Extender - Help
 	</figcaption>
