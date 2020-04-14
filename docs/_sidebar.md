@@ -63,6 +63,8 @@
     - [Python](additional/other/python.md)
     - [REXX](additional/other/rexx.md)
   - [Calling IBM i](additional/call/index.md)
+    - [Linux ODBC](additional/call/linux.md)
+    - [Windows ODBC](additional/call/windows.md)
     - [With C#](additional/call/csharp.md)
     - [With ColdFusion](additional/call/cf.md)
     - [With Go](additional/call/go.md)
