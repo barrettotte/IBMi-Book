@@ -53,6 +53,10 @@ To specify only free format, include ```**free``` on the first line of the file.
 From this point on I will only be using fully free RPGLE for easier understanding of the language and its quirks. 
 The next page will explain a bit about fixed format in comparison to free format.
 
+**Update**: Apparently the RPG compiler has gotten a lot better. The use of ```/free``` and ```/end-free``` are entirely optional
+and actually considered deprecated. Now if you **HAVE** to use fixed format and free format, the compiler will automatically know how to compile it without the preprocessor statements.
+The use of ```**free``` still works the same, if you include then fixed format will not compile.
+
 
 ## Opcodes
 Rather than overfill this page with big tables, I'll just provide a link to the IBM documentation https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzasd/operxcl.htm#operxcl
