@@ -164,3 +164,11 @@ C*
 C* Wait lets go back to fixed format to end this                                          
 C                   SETON                                        LR
 ```
+
+
+
+## Learning More
+This isn't really too great of a section because I haven't really used fixed format all that much myself.
+If you want to learn more about fixed format, head to [Go4AS400](http://www.go4as400.com/default.aspx).
+That is where I learned the basics of RPGLE.
+
