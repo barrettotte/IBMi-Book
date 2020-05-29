@@ -49,3 +49,9 @@ Now we're back in good ole SEU. I will be going more into this in the next secti
   <img src="./core/dds/_assets/dds-03.png" alt="SEU"/>
 </figure>
 <br>
+
+
+## IBM Documentation
+In the next few sections, I will be including some links to various IBM documentation for more detailed explanations.
+
+* DDS Concepts - https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/dds/kickoff.htm
