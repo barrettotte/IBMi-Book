@@ -111,6 +111,20 @@ And run the query ```select * from bolib/person``` again. Now that looks a littl
 Again, I want to emphasize that using ```STRSQL``` is not the ideal way to run SQL queries. We will be revisiting SQL shortly.
 
 
+## Display File Utility
+I will not be covering **Data File Utility (DFU)**, this is an insecure legacy utility that is no longer best practice.
+I have messed around with it a little bit, but I don't think its worth learning anymore.
+
+
+DFU allows you to essentially create a quick and dirty CRUD interface over a database file called a DFUPGM.
+However, this program is very insecure and can lead to some catastrophic errors. 
+So to reiterate, I don't recommend using it as a production application.
+
+If you still feel inclined to mess around with DFU, use the command ```STRDFU```.
+After creating a DFUPGM, it can be started with ```DFUPGM(MYDFUPGM)```.
+
+
+
 ## Conclusion
 There is a lot more you can do with DDS for physical files, but this is just a general introduction.
 I included some links to IBM documentation for a full list of functions you can use in physical files and some more detailed column definitions.
