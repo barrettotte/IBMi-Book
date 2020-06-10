@@ -22,12 +22,14 @@ I will try my best to describe them and give a comparison to what a web develope
 
 
 In this book I have no intention of going over printer files or ICF files. 
-I don't have very much experience with them and I don't believe there is going to be very much value in learning how these work right now.
+I don't have very much experience with printer files and I don't believe there is going to be very much value in learning how these work right now.
+At my current job, we don't use ICFF at all. So, I have no idea how they work.
+
 In my opinion physical, logical, and display files are the most valuable thing to learn a bit about.
 
 
-## Making a DDS File
-For a simple example, I will show how to make a physical file. This method will apply to all DDS types.
+## Making a DDS Source Member
+For a simple example, I will show how to make a physical file with DDS. This method will apply to all DDS types.
 For DDS source members, we need a new source physical file. Run the command ```CRTSRCPF```
 
 By convention, the new source physical file will be named **QDDSSRC**.
