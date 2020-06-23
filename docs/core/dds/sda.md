@@ -1,3 +1,0 @@
-# Screen Design Aid
-
-Coming soon...

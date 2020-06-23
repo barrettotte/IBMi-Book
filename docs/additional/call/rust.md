@@ -1,3 +1,0 @@
-# Calling IBM i with Rust
-
-Coming soon...

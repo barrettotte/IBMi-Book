@@ -1,3 +1,0 @@
-# Project Overview
-
-Coming soon...
