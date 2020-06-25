@@ -21,8 +21,8 @@ I usually make a basic **config.json** to hold my host/user properties and I inp
 // config.json
 
 {
-  'host': 'SOMEHOST',
-  'user': 'OTTEB'
+  "host": "SOMEHOST",
+  "user": "OTTEB"
 }
 ```
 
