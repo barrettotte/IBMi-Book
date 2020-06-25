@@ -2,10 +2,8 @@ const odbc = require('odbc');
 const config = require('./config.json');
 
 async function main(){
-  const pwd = config['pwd'];
-
   const conn = `Driver=IBM i Access ODBC Driver;` +
-    `System=${config['host']};UID=${config['user']};Password=${pwd}`;
+    `System=${config['host']};UID=${config['user']};Password=${config['pwd']}`;
 
   const pool = await odbc.pool(conn);
 
