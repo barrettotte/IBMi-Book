@@ -55,7 +55,6 @@
     - [With Jupyter](additional/call/jupyter.md)
     - [With Node](additional/call/node.md)
     - [With Python](additional/call/python.md)
-    - [With Ruby](additional/call/ruby.md)
 - Appendix
   - [Book Development](appendix/dev.md)
   - [References](appendix/references.md)
