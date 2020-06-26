@@ -1,0 +1,14 @@
+{
+  "name": "ibmiex",
+  "version": "1.0.0",
+  "description": "Example IBMi call",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barrett Otte",
+  "license": "MIT",
+  "dependencies": {
+    "odbc": "^2.3.0"
+  }
+}

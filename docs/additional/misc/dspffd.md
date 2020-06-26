@@ -1,3 +1,0 @@
-# Fun with DSPFFD
-
-Coming soon...

@@ -1,3 +1,0 @@
-# HTTP and JSON in RPGLE
-
-Coming soon...

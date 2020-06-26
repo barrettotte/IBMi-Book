@@ -1,3 +1,0 @@
-# Socket Programming in RPG
-
-Coming soon...
