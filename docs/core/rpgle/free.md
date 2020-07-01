@@ -552,6 +552,25 @@ endsr;
 ```
 
 
+## Pointers
+Just like C, RPG has the ability to use pointers. If you've never used pointers before, I'd suggest reading up on some examples in C.
+To declare a pointer, use the ```pointer``` keyword.
+
+Truthfully, I am not very familiar with using pointers in RPG myself. So, I am not going to go into it too much.
+[This page](https://developer.ibm.com/technologies/systems/articles/i-rpg-pointers/) by IBM is going to do a way better job at explaining concepts.
+
+```php
+// Declare a pointer
+dcl-s myPointer pointer;
+dcl-s myVar int(10);
+
+// set pointer to memory address of 'myVar'
+myVar = 10;
+myPointer = %addr(myVar);
+```
+
+
+
 ## Prototypes
 Prototypes in RPGLE work similar to prototypes in C. They tell the compiler how to call a program or procedure.
 This is useful for calling utility functions or external programs written in CL, RPGLE, C, etc.
