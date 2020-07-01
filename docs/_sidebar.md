@@ -3,6 +3,7 @@
   - [Before You Read](preface/before.md)
   - [About This Book](preface/about.md)
   - [IBM i Access / Software](preface/access.md)
+  - [Topics Not Covered](preface/not_covered.md)
 - Core
   - [1. IBM i](core/ibmi/index.md)
     - [Introduction](core/ibmi/intro.md)

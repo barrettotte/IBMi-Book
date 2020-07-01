@@ -1,3 +1,0 @@
-# Java on IBM i
-
-Coming soon...

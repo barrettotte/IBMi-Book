@@ -1,3 +1,0 @@
-# PHP on IBM i
-
-Coming soon...

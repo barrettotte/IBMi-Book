@@ -1,3 +1,0 @@
-# C on IBM i
-
-Coming soon...

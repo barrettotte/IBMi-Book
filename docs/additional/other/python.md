@@ -1,3 +1,0 @@
-# Python on IBM i
-
-Coming soon...
