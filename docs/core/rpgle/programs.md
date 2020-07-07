@@ -120,5 +120,8 @@ dcl-s message varchar(6800);
 dcl-proc main;
   message = 'hello world';
   QUILNGTX(message: %len(message): 'POPUP': 'TITLE': errorNull);
+
+  *INLR=*ON;
+  return;
 end-proc;
 ```
