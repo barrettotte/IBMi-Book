@@ -3,6 +3,8 @@
 Now that some background knowledge of files has been provided. 
 I can show some very basic examples of file operations in RPGLE.
 
+I only outline how to open a physical file, but the same technique will apply to logical files.
+
 
 ## Example DDS
 This is the DDS for a physical file I will use for all the examples below.

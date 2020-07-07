@@ -1,0 +1,7 @@
+     A          R INVRECFMT                 TEXT('Inventory Record')
+     A*                                                             
+     A            ITEMID         5S 0       COLHDG('ITEM ID')       
+     A            ITEMNAME      16A         COLHDG('ITEM NAME')     
+     A            ITEMCNT        3S 0       COLHDG('ITEM COUNT')    
+     A*                                                             
+     A          K ITEMID    
