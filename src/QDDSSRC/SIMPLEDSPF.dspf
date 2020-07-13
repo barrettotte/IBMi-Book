@@ -1,0 +1,18 @@
+     A* A SIMPLE DISPLAY FILE                                         
+     A*                                                               
+     A                                      INDARA                    
+     A*===============================================================
+     A*                                                               
+     A          R #MYRCD1                   TEXT('MY DSPF RECORD')            
+     A* COMMANDS......................................................
+     A                                      CA03(03 'EXIT')           
+     A                                      CA05(05 'REFRESH')        
+     A* FIELDS........................................................
+     A                                  6  4'ENTER NAME.......'       
+     A            #1NAME        16A  B  6 24TEXT('NAME FIELD')        
+     A            #1MSG         79A  O 24  1DSPATR(HI)                
+     A*                                                                                                                             
+     A*===============================================================
+     A                                 23  2'F3=EXIT   F5=REFRESH'    
+     A                                      COLOR(BLU)                
+     A*                                                               
