@@ -1,0 +1,33 @@
+     A* PERSON ENTRY                                          
+     A*                                                                
+     A                                      INDARA                     
+     A*=============================================================== 
+     A*                                                                
+     A          R #PRSRCD1                   TEXT('MAIN RECORD FORMAT')
+     A* COMMANDS...................................................... 
+     A                                      CA03(03 'EXIT')            
+     A                                      CA05(05 'REFRESH')         
+     A* FIELDS........................................................ 
+     A*                                                                
+     A* PGM NAME                                                       
+     A            ##PGM         10A     1  2TEXT('*PROGRAM')           
+     A                                      COLOR(BLU)                 
+     A* DATE                                                           
+     A                                  1 63DATE                       
+     A                                      EDTWRD('  /  /  ') 
+     A* SCREEN TITLE                                           
+     A                                  2 32'PERSON ENTRY'     
+     A                                      DSPATR(HI)         
+     A* NAME                                                   
+     A                                  6  4'NAME............' 
+     A            #1NAME        16A  B  6 24TEXT('NAME')       
+     A* AGE                                                    
+     A                                  7  4'AGE.............' 
+     A            #1AGE          3D  B  7 24TEXT('AGE')                
+     A* MESSAGE                                                        
+     A            #1MSG         79A  O 24  1DSPATR(HI)                 
+     A*                                                                
+     A*=============================================================== 
+     A                                 23  2'F3=EXIT  F5=REFRESH '     
+     A                                      COLOR(BLU)                 
+     A*                                                                

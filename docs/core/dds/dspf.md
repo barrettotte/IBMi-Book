@@ -34,6 +34,9 @@ Don't worry about copying this source, this is just a dumb example I made.
 * **line 8** defines a 79 character(A) field. **O** means it is only used for output. ```DSPATR(HI)``` changes the appearance of the field.
 * **lines 9 and 10** display some text to show what the commands do for this screen. Using ```COLOR(BLU)```, the text is displayed in blue.
 
+Its worth noting that the field/record format names do not need to start with '#'. This is just a convention that I use.
+Like other things, just be consistent with what you use.
+
 
 <br>
 
