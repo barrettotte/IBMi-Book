@@ -39,8 +39,6 @@
   - [5. DB2 SQL](core/db2/index.md)
     - [Introduction](core/db2/intro.md)
     - [SQLRPGLE](core/db2/sqlrpgle.md)
-    - [HTTP in DB2](core/db2/http.md)
-    - [Example Programs](core/db2/programs.md)
 - Additional Content
   - [Miscellaneous](additional/misc/index.md)
     - [Aldon and LMi](additional/misc/aldon.md)
