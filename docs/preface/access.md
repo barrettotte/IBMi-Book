@@ -18,18 +18,6 @@ Unfortunately, timeshare sites tend to be full and the system you use may not be
 * IBM Access Client Solutions - http://www-01.ibm.com/support/docview.wss?uid=nas8N1010355
 * ILE Editor - https://github.com/worksofbarry/ILEditor
 
-
-## Visual Studio Code
-For a short time I was working on a VS Code extension for developing on IBM i. 
-However, after attending the RPG & DB2 Summit (2019) I was enlightened on the fact that you can just use SSH and the IFS.
-
-I will cover this in a completely separate chapter towards the end of the book. 
-This book will primarily be using the "traditional" method of developing on IBM i.
-
-
-<br>
-
-
 <figure align="center">
   <img src="./preface/_assets/preface-02.PNG" alt="ILE Editor by Liam Barry" />
   <figcaption align="center">
@@ -38,3 +26,6 @@ This book will primarily be using the "traditional" method of developing on IBM 
 </figure>
 
 
+## Visual Studio Code
+There is now an extension [code-for-ibmi](https://github.com/halcyon-tech/code-for-ibmi)
+that allows you to maintain your RPGLE, CL, COBOL, C/CPP on IBM i right from Visual Studio Code. 
