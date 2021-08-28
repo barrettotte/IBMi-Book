@@ -63,21 +63,21 @@ I will show you how to easily tell that you are running a SQL statement in a **p
 Go into **Run SQL Scripts** > **View** > **Custom Border Settings**
 
 <figure align="center">
-	<img src="./core/ibmi/_assets/acs-05.PNG" alt="Custom border settings" />
+	<img src="./core/ibmi/_assets/acs-05.png" alt="Custom border settings" />
 </figure>
 <br>
 
 I personally like this configuration, but set anything you want in here that makes sense.
 
 <figure align="center">
-	<img src="./core/ibmi/_assets/acs-06.PNG" alt="Custom border settings" />
+	<img src="./core/ibmi/_assets/acs-06.png" alt="Custom border settings" />
 </figure>
 <br>
 
 Now you can easily tell what environment you're in just by seeing the scary red border.
 
 <figure align="center">
-	<img src="./core/ibmi/_assets/acs-07.PNG" alt="Run SQL Scripts with Border" />
+	<img src="./core/ibmi/_assets/acs-07.png" alt="Run SQL Scripts with Border" />
 </figure>
 <br>
 
